@@ -25,3 +25,12 @@ for bc in `cat barcodes2` ; do url="http://www.archive.org/download/${bc}/${bc}_
 12,290 files and 9.0 GB of text files with OCR in them are now in my directory so most downloaded fine.
 
 Basically the only issue I found was that on line like 15212, Postgres says that there is too much data when running the copy command so the tab separated file isn't perfectly clean.
+
+
+## Data issues
+
+While codeing, found some issues with data (exported data.zip on 2016-05-16):
+
+1. item.txt line 15547 seems to have an unescaped new line in the "local=..." field which causes
+line 15548 to not parse properly. Python cvs.DictReader() will still load the line but the resulting dict will have
+None for the barcode key.
