@@ -11,10 +11,22 @@ mirror = "data/mirror"
 source_url = "http://archive.org/download"
 
 def download_file(file_spec):
-    #try:
-    resp = urllib.urlretrieve(file_spec["remote_fn"], file_spec["local_fn"])
-    #except:
-    #    print("Whoops!")
+    try:
+        resp = urllib.urlretrieve(file_spec["remote_fn"] + "a", file_spec["local_fn"])
+        
+        # archive.org returns HTML pages with status 200 for 404's. To tell if
+        # we actually got a file, look for the ETag header, real files have them
+        # and the "404" HTML page does not.
+        if not "ETag" in resp[1]:
+            os.unlink(file_spec["local_fn"])
+            print("File not found " + file_spec["remote_fn"])
+            # FIXME: change to logging
+        # 
+        else:
+            
+    except:
+        # FIXME: change to logging
+        print("Whoops!")
 
 # read items as tsv
 barcodes = []
