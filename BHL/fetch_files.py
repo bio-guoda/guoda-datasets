@@ -99,7 +99,7 @@ def main():
 
     barcodes = read_barcodes(item_fn)
     file_specs = make_urls_to_get(barcodes, file_suffixes, source_url, mirror_dir)
-    get_all_urls(file_specs[0:10], workers)
+    get_all_urls(file_specs, workers)
 
     now_for_files = time.strftime(iso_date_fmt)
     logging.info("Finished at {0}".format(now_for_files))
