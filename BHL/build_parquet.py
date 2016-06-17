@@ -1,8 +1,9 @@
 from __future__ import print_function
 import os
-from pyspark import SQLContext
+import sys
+from pyspark import SparkContext, SQLContext
+import pyspark.sql.functions as sql
 import pyspark.sql.types as types
-import pyspark.ml.feature as feature
 
 import unicodecsv
 from dateutil.parser import parse
@@ -110,18 +111,32 @@ def get_ocr(barcode):
     return ocr_text  
 
 
+dataset_date = sys.argv[1]
+
 mirror_dir = "data/mirror"
-data_dir = "data/data-20160516"
+data_dir = "data/data-{0}".format(dataset_date)
+out_dir = "data/bhl-{0}.parquet".format(dataset_date)
 
-fn = os.path.join(data_dir, "item.txt")
-df = sqlContext.createDataFrame(t_gen(fn, type_data_item), schema_item())
-
-
-# Optional limit for testing
-df = df.sample(withReplacement=False, fraction=0.001)
+if os.path.isdir(out_dir):	
+    print("Output dir {0} exists".format(out_dir))
+    exit
 
 
 get_ocr_udf = sql.udf(get_ocr, types.StringType())
-df_ocr = df.withColumn("ocrtext", get_ocr_udf(df["barcode"]))
+fn = os.path.join(data_dir, "item.txt")
 
-df_ocr.write.parquet("data/first_draft5.parquet")
+# Optional limit for testing, add this to the chain as second step
+# .sample(withReplacement=False, fraction=0.001) \
+sqlContext.createDataFrame(t_gen(fn, type_data_item), schema_item()) \
+    .sample(withReplacement=False, fraction=0.001) \
+    .withColumn("ocrtext", get_ocr_udf(sql.col("barcode"))) \
+    .write.parquet(out_dir)
+
+
+# Example run on Elk (16 thread single machine)
+#real    84m21.818s
+#user    198m57.612s
+#sys     15m19.662s
+
+#df_ocr = df.withColumn("ocrtext", get_ocr_udf(df["barcode"]))
+#df_ocr.write.parquet("data/{0}".format(sys.argv[1]))
