@@ -128,7 +128,6 @@ fn = os.path.join(data_dir, "item.txt")
 # Optional limit for testing, add this to the chain as second step
 # .sample(withReplacement=False, fraction=0.001) \
 sqlContext.createDataFrame(t_gen(fn, type_data_item), schema_item()) \
-    .sample(withReplacement=False, fraction=0.001) \
     .withColumn("ocrtext", get_ocr_udf(sql.col("barcode"))) \
     .write.parquet(out_dir)
 
@@ -138,5 +137,3 @@ sqlContext.createDataFrame(t_gen(fn, type_data_item), schema_item()) \
 #user    198m57.612s
 #sys     15m19.662s
 
-#df_ocr = df.withColumn("ocrtext", get_ocr_udf(df["barcode"]))
-#df_ocr.write.parquet("data/{0}".format(sys.argv[1]))
