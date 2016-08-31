@@ -83,6 +83,8 @@ def t_gen(fn, parse_method):
     errors = 0
     with open(fn) as f:
         # encoding specified as 'utf-8-sig' since dumps have byte order mark
+        # debugging #2, replacing this line didn't help
+        #f_tsv = unicodecsv.DictReader(f, dialect="excel-tab")
         f_tsv = unicodecsv.DictReader(f, encoding='utf-8-sig', dialect="excel-tab")
         for l in f_tsv:
             i += 1
@@ -136,4 +138,9 @@ sqlContext.createDataFrame(t_gen(fn, type_data_item), schema_item()) \
 #real    84m21.818s
 #user    198m57.612s
 #sys     15m19.662s
+
+# Example run on okapi (128 thread single machine)
+#real    41m13.984s
+#user    482m34.084s
+#sys     278m12.404s
 
