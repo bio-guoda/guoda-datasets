@@ -37,3 +37,44 @@ command line. See blog post below for more options.
 ### References
 
 [ntegrating Hadoop and Elasticsearch – Part 2](https://db-blog.web.cern.ch/blog/prasanth-kothuri/2016-05-integrating-hadoop-and-elasticsearch-%E2%80%93-part-2-%E2%80%93-writing-and-querying)
+
+
+pyspark --driver-class-path=elasticsearch-spark-20_2.11-5.0.0-beta1.jar --conf spark.es.nodes="c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu" 
+
+
+https://www.google.com/search?q=typically+this+occurs+with+arrays+which+are+not+mapped+as+single+value&oq=typically+this+occurs+with+arrays+which+are+not+mapped+as+single+value&aqs=chrome..69i57.1196j0j7&sourceid=chrome&ie=UTF-8
+
+
+Have issues with array fields getting detected in schema:
+
+16/10/10 09:54:48 WARN ScalaRowValueReader: Field 'flags' is backed by an array but the associated Spark Schema does not reflect this;
+              (use es.read.field.as.array.include/exclude) 
+16/10/10 09:54:48 WARN ScalaRowValueReader: Field 'indexData.dwc:multimedia' is backed by an array but the associated Spark Schema does not reflect this;
+              (use es.read.field.as.array.include/exclude) 
+
+
+Have an error with this field:
+
+org.elasticsearch.hadoop.EsHadoopIllegalStateException: Field 'indexData.dwc:multimedia.dcterms:source' not found; typically this occurs with arrays which are not mapped as single value
+
+indexData.dwc:multimedia is an array in ES as is indexData.dwc, nested arrays
+
+Discussion of data mapping, see "Handling array/multi-value fields"
+
+https://www.elastic.co/guide/en/elasticsearch/hadoop/current/mapping.html
+
+There doesn't seem to be anything special about this field, arrays detected as structs that are nullable according to printSchema().
+
+https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html
+
+It looks like we need to help out the mapper, es.field.read.as.array.include. How and where to set this?
+
+https://spark.apache.org/docs/1.5.0/api/python/_modules/pyspark/conf.html
+http://stackoverflow.com/questions/32362783/how-to-change-sparkcontext-properties-in-interactive-pyspark-session
+
+Looks like making a conf object before creating the context. Can we really not change this at runtime? 
+"
+once a SparkConf object is passed to Spark, it is cloned and can no longer be modified by the user. Spark does not support modifying the configuration at runtime. 
+"
+
+Guess so...
