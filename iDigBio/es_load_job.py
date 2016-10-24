@@ -20,7 +20,10 @@ if os.path.isdir(out_dir):
 index_version = "2.10.2"
 nodes = "c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu"
 query = '{"query": {"bool": {"must": [{"term":{"genus":"acer"}}]}}}'
-fields = "uuid,genus"
+fields = ("uuid,kingdom,phylum,order,class,family,genus,group,specificepithet,infraspecificepithet,scientificname,commonname,canonicalname,highertaxon,"
+          "datecollected,continent,country,countrycode,stateprovince,municipality,waterbody,"
+          "occurenceid,catalognumber,fieldnumber,collectioncode,collectionid,collector,barcodevalue,basisofrecord,individualcount"
+)
 
 (sqlContext.read.format("org.elasticsearch.spark.sql")
     .option("es.query", query)
