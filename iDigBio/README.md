@@ -34,6 +34,20 @@ Spark version that came with Spark by starting `spark-shell`.
 command line. See blog post below for more options.
 
 
+### Running
+
+Probably only needs about 10G of memory (data size is 6.7G with the limited fields at the moment):
+
+time spark-submit --driver-memory 50g es_load_job.py
+
+Example on Okapi:
+
+real    44m29.128s
+user    102m56.928s
+sys     6m44.064s
+
+
+
 ### References
 
 [ntegrating Hadoop and Elasticsearch – Part 2](https://db-blog.web.cern.ch/blog/prasanth-kothuri/2016-05-integrating-hadoop-and-elasticsearch-%E2%80%93-part-2-%E2%80%93-writing-and-querying)
