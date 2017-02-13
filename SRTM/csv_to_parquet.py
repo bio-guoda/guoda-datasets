@@ -1,7 +1,9 @@
-from pyspark import SparkContext, SparkConf
+from pyspark.sql import SparkSession
 
-sc = SparkContext(appName="Elevation Parquet Converter")
-sqlContext = SQLContext(sc)
+spark = SparkSession \
+    .builder \
+    .appName("Elevation Parquet Converter") \
+    .getOrCreate()
 
 df = spark.read.csv("dem3/*.csv")
 df.write.parquet("elevation.parquet")
