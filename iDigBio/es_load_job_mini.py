@@ -14,8 +14,8 @@ import pyspark.sql.types as types
 sc = SparkContext(appName="iDigBioParquetMini")
 sqlContext = SQLContext(sc)
 
-dataset_date = time.strftime("%Y%m%d%s")
-out_dir = "/outputs/mini-idigbio-{0}.parquet".format(dataset_date)
+dataset_date = time.strftime("%Y%m%d%S")
+out_dir = "/tmp/mini-idigbio-{0}.parquet".format(dataset_date)
 
 # This doesn't work for checking HDFS file system, will always overwrite output
 if os.path.isdir(out_dir):
