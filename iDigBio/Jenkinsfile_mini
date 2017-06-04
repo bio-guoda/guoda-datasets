@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building..."
-                sh "./es_load_job_mini_run.sh"
+                sh "cd iDigBio; ./es_load_job_mini_run.sh"
                 echo "Done."
             }
         }
