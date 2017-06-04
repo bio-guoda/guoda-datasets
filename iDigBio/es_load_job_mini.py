@@ -15,7 +15,7 @@ sqlContext = SQLContext(sc)
 
 out_dir = "/tmp"
 out_fn_base = "idigbio-minitest"
-dataset_date = time.strftime("%Y%m%d%S")
+dataset_date = time.strftime("%Y%m%dT%H%M%S")
 nodes = "c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu"
 index = "idigbio"
 query = '{"query": {"bool": {"must": [{"term":{"genus":"eucalyptus"}}]}}}'
