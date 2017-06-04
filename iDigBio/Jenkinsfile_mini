@@ -1,0 +1,12 @@
+pipeline {
+    agent { label 'spark' }
+    stages {
+        stage('Build') {
+            steps {
+                echo "Building..."
+                sh "./es_load_job_mini_run.sh"
+                echo "Done."
+            }
+        }
+    }
+}
