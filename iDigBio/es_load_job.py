@@ -50,12 +50,13 @@ field_set -= bad_field_set
 fields = ",".join(field_set)
 
 # Read in dataframe
+#https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html
+#es.input.max.docs.per.partition (default 100000) 
 #    .option("es.query", query)
 df = (sqlContext.read.format("org.elasticsearch.spark.sql")
     .option("es.read.field.include", fields)
     .option("es.nodes", nodes)
     .load("{0}/records".format(index))
-    .cache()
 )
 
 # Write out the whole thing
