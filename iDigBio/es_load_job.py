@@ -12,11 +12,11 @@ sc = SparkContext(appName="iDigBioParquet")
 sqlContext = SQLContext(sc)
 
 out_dir = "/guoda/data"
-out_fn_base = "idigbio-scrap"
+out_fn_base = "idigbio"
 dataset_date = time.strftime("%Y%m%dT%H%M%S")
 nodes = "c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu"
 index = "idigbio"
-query = '{"query": {"bool": {"must": [{"term":{"stateprovince":"florida"}}]}}}'
+#query = '{"query": {"bool": {"must": [{"term":{"stateprovince":"florida"}}]}}}'
 
 # Get field list from API endpoint
 meta_fields_records = (requests
@@ -33,7 +33,7 @@ for k,v in meta_fields_records.items():
                 field_set.add("data.{0}".format(kd))
 
 # Remove known fields that cause problems
-bad_field_set = set({'commonnames', 'flags', 'recordids', 'mediarecords', 'associatedsequences'})
+bad_field_set = set({'associatedsequences', 'commonnames', 'flags', 'mediarecords', 'recordids'})
 field_set -= bad_field_set
 
 # Code to help binary search for a field that's not working, comment out when running live
@@ -50,10 +50,10 @@ field_set -= bad_field_set
 fields = ",".join(field_set)
 
 # Read in dataframe
+#    .option("es.query", query)
 df = (sqlContext.read.format("org.elasticsearch.spark.sql")
     .option("es.read.field.include", fields)
     .option("es.nodes", nodes)
-    .option("es.query", query)
     .load("{0}/records".format(index))
     .cache()
 )
