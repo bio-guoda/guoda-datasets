@@ -8,4 +8,5 @@ export HADOOP_USER_NAME="hdfs"
              --driver-memory 2G \
              --total-executor-cores 48 \
              --executor-memory 3G \
+             --conf spark.sql.shuffle.partitions=3000 \
              es_load_job.py
