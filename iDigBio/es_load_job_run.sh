@@ -5,7 +5,8 @@ export HADOOP_USER_NAME="hdfs"
 
 /opt/spark/latest/bin/spark-submit \
              --master mesos://zk://mesos02:2181,mesos01:2181,mesos03:2181/mesos \
-             --driver-memory 2g \
+             --driver-memory 2G \
              --total-executor-cores 48 \
-             --executor-memory 1250M \
-             es_load_job_mini.py
+             --executor-memory 3G \
+             --conf spark.sql.shuffle.partitions=3000 \
+             es_load_job.py

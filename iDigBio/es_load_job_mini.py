@@ -10,21 +10,15 @@ from pyspark import SparkContext, SQLContext
 import pyspark.sql.functions as sql
 import pyspark.sql.types as types
 
-
 sc = SparkContext(appName="iDigBioParquetMini")
 sqlContext = SQLContext(sc)
 
-dataset_date = time.strftime("%Y%m%d%S")
-out_dir = "/tmp/mini-idigbio-{0}.parquet".format(dataset_date)
-
-# This doesn't work for checking HDFS file system, will always overwrite output
-if os.path.isdir(out_dir):
-    print("Output dir {0} exists, use --overwrite?".format(out_dir))
-    exit
-
-index = "idigbio"
+out_dir = "/tmp"
+out_fn_base = "idigbio-minitest"
+dataset_date = time.strftime("%Y%m%dT%H%M%S")
 nodes = "c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu"
-query = '{"query": {"bool": {"must": [{"term":{"genus":"acer"}}]}}}'
+index = "idigbio"
+query = '{"query": {"bool": {"must": [{"term":{"genus":"eucalyptus"}}]}}}'
 
 # Get field list from API endpoint
 meta_fields_records = (requests
@@ -45,13 +39,37 @@ bad_field_set = set({'commonnames', 'flags', 'recordids', 'mediarecords'})
 field_set -= bad_field_set
 fields = ",".join(field_set)
 
-# Write out dataframe
-(sqlContext.read.format("org.elasticsearch.spark.sql")
+# Read in dataframe
+df = (sqlContext.read.format("org.elasticsearch.spark.sql")
     .option("es.read.field.include", fields)
     .option("es.nodes", nodes)
     .option("es.query", query)
     .load("{0}/records".format(index))
+    .cache()
+)
+
+# Write out the whole thing
+(df
     .write
     .mode("overwrite")
-    .parquet(out_dir)
+    .parquet(os.path.join(out_dir,
+                          "{0}-{1}.parquet".format(out_fn_base, dataset_date)))
+)
+
+# Write out a small 100k version for testing
+(df
+    .limit(100 * 1000)
+    .write
+    .mode("overwrite")
+    .parquet(os.path.join(out_dir,
+                          "{0}-{1}-100k.parquet".format(out_fn_base, dataset_date)))
+)
+
+# Write out a larger 1M version for testing
+(df
+    .limit(1000 * 1000)
+    .write
+    .mode("overwrite")
+    .parquet(os.path.join(out_dir,
+                          "{0}-{1}-1M.parquet".format(out_fn_base, dataset_date)))
 )
