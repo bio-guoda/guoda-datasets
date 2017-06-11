@@ -16,14 +16,14 @@ out_fn_base = "idigbio-media-scrap"
 dataset_date = time.strftime("%Y%m%dT%H%M%S")
 nodes = "c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu"
 index = "idigbio"
-query = """{"query": {
-    "bool": {
-        "must": [
-            {
-                "term": {"recordset": "95773ebb-2f5f-43f0-a652-bfd8d5f4707a"}
-            }
-        ]
-}}}"""
+#query = """{"query": {
+#    "bool": {
+#        "must": [
+#            {
+#                "term": {"recordset": "a2b36fdf-50bc-44ef-a6a4-ca6dc1dc148a"}
+#            }
+#        ]
+#}}}"""
 
 # Get field list from API endpoint
 meta_fields_records = (requests
@@ -34,13 +34,13 @@ field_set = set()
 for k,v in meta_fields_records.items():
     if v.get("fieldName", False):
         field_set.add(k)
-#    if k == "data":
-#        for kd,vd in v.items():
-#            if vd.get("fieldName", False):
-#                field_set.add("data.{0}".format(kd))
+    if k == "data":
+        for kd,vd in v.items():
+            if vd.get("fieldName", False):
+                field_set.add("data.{0}".format(kd))
 
 # Remove known fields that cause problems
-bad_field_set = set(["recordids", "records"])
+bad_field_set = set(["flags", "recordids", "records"])
 field_set -= bad_field_set
 
 # Code to help binary search for a field that's not working, comment out when running live
@@ -61,10 +61,10 @@ fields = ",".join(field_set)
 # Read in dataframe
 #https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html
 #es.input.max.docs.per.partition (default 100000) 
+#    .option("es.query", query)
 df = (sqlContext.read.format("org.elasticsearch.spark.sql")
     .option("es.read.field.include", fields)
     .option("es.nodes", nodes)
-    .option("es.query", query)
     .load("{0}/mediarecords".format(index))
 )
 
