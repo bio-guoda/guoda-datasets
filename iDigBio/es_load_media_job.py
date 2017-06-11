@@ -11,8 +11,8 @@ import pyspark.sql.types as types
 sc = SparkContext(appName="iDigBioMediaParquet")
 sqlContext = SQLContext(sc)
 
-out_dir = "/tmp"
-out_fn_base = "idigbio-media-scrap"
+out_dir = "/guoda/data"
+out_fn_base = "idigbio-media"
 dataset_date = time.strftime("%Y%m%dT%H%M%S")
 nodes = "c18node14.acis.ufl.edu,c18node2.acis.ufl.edu,c18node6.acis.ufl.edu,c18node10.acis.ufl.edu,c18node12.acis.ufl.edu"
 index = "idigbio"
