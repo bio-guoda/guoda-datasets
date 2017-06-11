@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building..."
-                sh "cd iDigBio; ./es_load_job_media_run.sh"
+                sh "cd iDigBio; ./es_load_media_job_run.sh"
                 echo "Done."
             }
         }
