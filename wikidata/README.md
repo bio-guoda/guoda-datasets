@@ -83,5 +83,22 @@ res0: Array[(String, String)] = Array((Q140,NCBI:9689), (Q140,ITIS:183803), (Q14
 58), (Q606,ITIS:563933), (Q606,EOL:794643), (Q606,GBIF:2450372), (Q787,NCBI:9825), (Q787,ITIS:898917))
 ```
 
+## count unique taxon items 
 
+After saving the taxon links in a parquet format, calculations can get quite fast.
+
+For instance, counting the number of unique wikidata taxon items with at least one external taxonomic identifier take less than a minute:
+
+```scala
+
+val links = spark.read.parquet("/guoda/data/source=wikidata/date=20171227/taxonlinks.parquet") 
+links.as[(String, String)].map(link => link._1).distinct.count 
+// res4: Long = 1953706                                                     
+// ~ about 2M taxon wikidata items
+
+links.as[(String, String)].map(link => link._2).filter(_.startsWith("EOL")).distinct.count 
+// res5: Long = 1351475
+// ~ 1.3M eol unique taxon ids
+
+```
 
