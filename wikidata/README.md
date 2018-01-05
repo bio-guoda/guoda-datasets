@@ -1,8 +1,8 @@
 This page contains some experiments on how to get all of wikidata and mine it using scala/spark. 
 
-Before attempting to get and import the data, please check whether a version alreday exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
+Before attempting to get and import the data, please check whether a version already exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
 
-# getting the data
+# get data
 
 ```
 wget https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2
