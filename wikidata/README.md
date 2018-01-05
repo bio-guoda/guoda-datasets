@@ -40,9 +40,9 @@ Now, in spark shell, do something like:
 ```scala
 val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/latest-all.json.bz2")
 
-# select taxa chunks and turn into individual json objects
-# taxa chunks are json object that mention taxon qualifier https://www.wikidata.org/wiki/Q16521
-# turn into JSON Lines text format, also called newline-delimited JSON (see http://jsonlines.org/)
+// select taxa chunks and turn into individual json objects
+// taxa chunks are json object that mention taxon qualifier https://www.wikidata.org/wiki/Q16521
+// turn into JSON Lines text format, also called newline-delimited JSON (see http://jsonlines.org/)
 val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replace(""",$""", ""))
 ```
 
