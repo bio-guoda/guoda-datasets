@@ -1,4 +1,6 @@
+This page contains some experiements on how to get all of wikidata and mine it using scala/spark. 
 
+Before attempting to get and import the data, please check whether a version alreday exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
 
 # getting the data
 
@@ -17,13 +19,13 @@ hdfs dfs -put latest-all.json.bz2 hdfs://guoda/data/source=wikidata/date=2017122
 
 where 20171227 is the date of the wikidata dump. 
 
-# manipulate in scala spark-shell
+# mine data
 
-## open the data archive
+## extract json objects
 
 Wiki data archive is a giant json array of items like:
 
-```json
+```
 [
 { item1 },
 { item2 },
@@ -43,6 +45,10 @@ val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/la
 # turn into JSON Lines text format, also called newline-delimited JSON (see http://jsonlines.org/)
 val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replace(""",$""", ""))
 ```
+
+## extract taxon links
+
+Wikidata contains taxon items (e.g., [lion](https://www.wikidata.org/wiki/Q140))with rich associations to all sorts of data including taxonomies, images, commonnames and more. The example below shows how to select taxon items and extract taxon ids for various taxonomic systems (e.g., GBIF, ITIS, NCBI, EOL, WoRMS). 
 
 For full example, see [wikidata/taxonlinks.scala](https://github.com/bio-guoda/guoda-datasets/blob/master/wikidata/taxonlinks.scala). You can copy-paste this example into spark-shell, or use ```:paste [filename]``` to run the commands.
 
