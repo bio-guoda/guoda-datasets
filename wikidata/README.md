@@ -44,7 +44,38 @@ val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/la
 val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replace(""",$""", ""))
 ```
 
-For full example, see [wikidata/taxonlinks.scala](https://github.com/bio-guoda/guoda-datasets/blob/master/wikidata/taxonlinks.scala). You can copy-paste this example into spark-shell, or use ```:paste [filename]``` to run the commands. 
+For full example, see [wikidata/taxonlinks.scala](https://github.com/bio-guoda/guoda-datasets/blob/master/wikidata/taxonlinks.scala). You can copy-paste this example into spark-shell, or use ```:paste [filename]``` to run the commands.
+
+An example run in a spark shell looks like:
+
+```
+Spark session available as 'spark'.
+Welcome to                                                                                                                         
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.2.0
+      /_/
+
+Using Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_151)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> :paste "taxonlinks.scala"
+Pasting file taxonlinks.scala...
+import org.json4s._
+import org.json4s.jackson.JsonMethods._
+formats: org.json4s.DefaultFormats.type = <lazy>
+isTaxonInstance: (json: org.json4s.JValue)Boolean
+taxonItemId: (json: org.json4s.JValue)Option[String]
+idMapForTaxon: (json: org.json4s.JValue)Seq[(String, String)]
+wikidata: org.apache.spark.sql.Dataset[String] = [value: string]
+taxaJsonString: org.apache.spark.sql.Dataset[String] = [value: string]
+import spark.implicits._
+taxonLinks: org.apache.spark.sql.Dataset[(String, String)] = [_1: string, _2: string]
+res0: Array[(String, String)] = Array((Q140,NCBI:9689), (Q140,ITIS:183803), (Q140,EOL:328672), (Q140,GBIF:5219404), (Q606,NCBI:1962
+58), (Q606,ITIS:563933), (Q606,EOL:794643), (Q606,GBIF:2450372), (Q787,NCBI:9825), (Q787,ITIS:898917))
+```
 
 
 
