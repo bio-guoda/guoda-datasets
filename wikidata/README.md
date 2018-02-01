@@ -36,7 +36,7 @@ Wiki data archive is a giant json array of items like
 
 with N >> 1M
 
-For full examples, see [lion.json](./lion.json) and [cat](./cat.json).
+For full examples, see [lion.json](./lion.json) and [cat.json](./cat.json).
 
 Now, in spark shell, do something like:
 ```scala
