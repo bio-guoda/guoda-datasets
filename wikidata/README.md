@@ -23,7 +23,7 @@ where 20171227 is the date of the wikidata dump.
 
 ## extract json objects
 
-Wiki data archive is a giant json array of items like:
+Wiki data archive is a giant json array of items like 
 
 ```
 [
@@ -35,6 +35,8 @@ Wiki data archive is a giant json array of items like:
 ```
 
 with N >> 1M
+
+For full examples, see [lion.json](./lion.json) and [cat](./cat.json).
 
 Now, in spark shell, do something like:
 ```scala
