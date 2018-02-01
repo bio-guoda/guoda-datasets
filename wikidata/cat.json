@@ -1,0 +1,7750 @@
+{
+  "type": "item",
+  "id": "Q146",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "cat"
+    },
+    "fr": {
+      "language": "fr",
+      "value": "chat"
+    },
+    "pt-br": {
+      "language": "pt-br",
+      "value": "gato"
+    },
+    "sv": {
+      "language": "sv",
+      "value": "Katt"
+    },
+    "szl": {
+      "language": "szl",
+      "value": "Kot"
+    },
+    "eu": {
+      "language": "eu",
+      "value": "katu"
+    },
+    "pl": {
+      "language": "pl",
+      "value": "kot domowy"
+    },
+    "bs": {
+      "language": "bs",
+      "value": "Mačka"
+    },
+    "ang": {
+      "language": "ang",
+      "value": "Catte"
+    },
+    "uz": {
+      "language": "uz",
+      "value": "Mushuk"
+    },
+    "es": {
+      "language": "es",
+      "value": "gato"
+    },
+    "st": {
+      "language": "st",
+      "value": "Katse"
+    },
+    "oc": {
+      "language": "oc",
+      "value": "Felis silvestris catus"
+    },
+    "srn": {
+      "language": "srn",
+      "value": "Puspusi"
+    },
+    "hu": {
+      "language": "hu",
+      "value": "macska"
+    },
+    "sw": {
+      "language": "sw",
+      "value": "Paka-kaya"
+    },
+    "sq": {
+      "language": "sq",
+      "value": "Macja"
+    },
+    "cdo": {
+      "language": "cdo",
+      "value": "Mà"
+    },
+    "nso": {
+      "language": "nso",
+      "value": "Katse"
+    },
+    "mt": {
+      "language": "mt",
+      "value": "qattus"
+    },
+    "am": {
+      "language": "am",
+      "value": "ድመት"
+    },
+    "ia": {
+      "language": "ia",
+      "value": "Felis silvestris catus"
+    },
+    "ga": {
+      "language": "ga",
+      "value": "Cat"
+    },
+    "nl": {
+      "language": "nl",
+      "value": "kat"
+    },
+    "eo": {
+      "language": "eo",
+      "value": "hejma kato"
+    },
+    "yi": {
+      "language": "yi",
+      "value": "קאץ"
+    },
+    "nrm": {
+      "language": "nrm",
+      "value": "Cat"
+    },
+    "sr": {
+      "language": "sr",
+      "value": "мачка"
+    },
+    "ckb": {
+      "language": "ckb",
+      "value": "پشیلە"
+    },
+    "uk": {
+      "language": "uk",
+      "value": "кіт свійський"
+    },
+    "jbo": {
+      "language": "jbo",
+      "value": "mlatu"
+    },
+    "be-tarask": {
+      "language": "be-tarask",
+      "value": "кот"
+    },
+    "gan": {
+      "language": "gan",
+      "value": "貓"
+    },
+    "pa": {
+      "language": "pa",
+      "value": "ਬਿੱਲੀ"
+    },
+    "frp": {
+      "language": "frp",
+      "value": "Chat"
+    },
+    "sah": {
+      "language": "sah",
+      "value": "Куоска"
+    },
+    "rue": {
+      "language": "rue",
+      "value": "Мачка"
+    },
+    "sco": {
+      "language": "sco",
+      "value": "cat"
+    },
+    "kv": {
+      "language": "kv",
+      "value": "Кань"
+    },
+    "ne": {
+      "language": "ne",
+      "value": "बिरालो"
+    },
+    "az": {
+      "language": "az",
+      "value": "Ev pişiyi"
+    },
+    "bm": {
+      "language": "bm",
+      "value": "Jakuma"
+    },
+    "hr": {
+      "language": "hr",
+      "value": "Domaća mačka"
+    },
+    "lmo": {
+      "language": "lmo",
+      "value": "Felis silvestris catus"
+    },
+    "fur": {
+      "language": "fur",
+      "value": "Gjat"
+    },
+    "csb": {
+      "language": "csb",
+      "value": "Kòt"
+    },
+    "da": {
+      "language": "da",
+      "value": "kat"
+    },
+    "an": {
+      "language": "an",
+      "value": "Felis catus"
+    },
+    "vec": {
+      "language": "vec",
+      "value": "Gato"
+    },
+    "pms": {
+      "language": "pms",
+      "value": "Gat"
+    },
+    "gsw": {
+      "language": "gsw",
+      "value": "Huuschatze"
+    },
+    "lez": {
+      "language": "lez",
+      "value": "Кац"
+    },
+    "udm": {
+      "language": "udm",
+      "value": "Коӵыш"
+    },
+    "nah": {
+      "language": "nah",
+      "value": "Miztōn"
+    },
+    "arz": {
+      "language": "arz",
+      "value": "قطه"
+    },
+    "be": {
+      "language": "be",
+      "value": "кот свойскі"
+    },
+    "he": {
+      "language": "he",
+      "value": "חתול הבית"
+    },
+    "lad": {
+      "language": "lad",
+      "value": "Gato"
+    },
+    "yo": {
+      "language": "yo",
+      "value": "Ológbò"
+    },
+    "mdf": {
+      "language": "mdf",
+      "value": "Ката"
+    },
+    "ay": {
+      "language": "ay",
+      "value": "Phisi"
+    },
+    "ml": {
+      "language": "ml",
+      "value": "പൂച്ച"
+    },
+    "vi": {
+      "language": "vi",
+      "value": "Mèo"
+    },
+    "sc": {
+      "language": "sc",
+      "value": "Felis"
+    },
+    "yue": {
+      "language": "yue",
+      "value": "貓"
+    },
+    "wo": {
+      "language": "wo",
+      "value": "Muus"
+    },
+    "hsb": {
+      "language": "hsb",
+      "value": "Domjaca kóčka"
+    },
+    "ht": {
+      "language": "ht",
+      "value": "Chat"
+    },
+    "gn": {
+      "language": "gn",
+      "value": "Mbarakaja"
+    },
+    "lzh": {
+      "language": "lzh",
+      "value": "貓"
+    },
+    "tg": {
+      "language": "tg",
+      "value": "Гурба"
+    },
+    "ku": {
+      "language": "ku",
+      "value": "Pisîk"
+    },
+    "sk": {
+      "language": "sk",
+      "value": "mačka domáca"
+    },
+    "ext": {
+      "language": "ext",
+      "value": "Felis silvestris catus"
+    },
+    "mn": {
+      "language": "mn",
+      "value": "Муур"
+    },
+    "th": {
+      "language": "th",
+      "value": "แมว"
+    },
+    "ca": {
+      "language": "ca",
+      "value": "gat"
+    },
+    "fo": {
+      "language": "fo",
+      "value": "Kettur"
+    },
+    "cy": {
+      "language": "cy",
+      "value": "Cath"
+    },
+    "cs": {
+      "language": "cs",
+      "value": "kočka domácí"
+    },
+    "sgs": {
+      "language": "sgs",
+      "value": "Katie"
+    },
+    "os": {
+      "language": "os",
+      "value": "Гæды"
+    },
+    "mr": {
+      "language": "mr",
+      "value": "मांजर"
+    },
+    "bg": {
+      "language": "bg",
+      "value": "котка"
+    },
+    "arc": {
+      "language": "arc",
+      "value": "ܩܛܐ"
+    },
+    "te": {
+      "language": "te",
+      "value": "పిల్లి"
+    },
+    "ur": {
+      "language": "ur",
+      "value": "بلی"
+    },
+    "km": {
+      "language": "km",
+      "value": "ឆ្មា"
+    },
+    "zu": {
+      "language": "zu",
+      "value": "Ikati"
+    },
+    "gv": {
+      "language": "gv",
+      "value": "Kayt"
+    },
+    "lb": {
+      "language": "lb",
+      "value": "Hauskaz"
+    },
+    "jv": {
+      "language": "jv",
+      "value": "kucing"
+    },
+    "bo": {
+      "language": "bo",
+      "value": "ཞི་མི།"
+    },
+    "qu": {
+      "language": "qu",
+      "value": "Michi"
+    },
+    "gd": {
+      "language": "gd",
+      "value": "Cat"
+    },
+    "haw": {
+      "language": "haw",
+      "value": "Pōpoki"
+    },
+    "ta": {
+      "language": "ta",
+      "value": "பூனை"
+    },
+    "af": {
+      "language": "af",
+      "value": "Kat"
+    },
+    "ltg": {
+      "language": "ltg",
+      "value": "Kačs"
+    },
+    "ms": {
+      "language": "ms",
+      "value": "kucing"
+    },
+    "ceb": {
+      "language": "ceb",
+      "value": "Iring"
+    },
+    "ce": {
+      "language": "ce",
+      "value": "Cicig"
+    },
+    "to": {
+      "language": "to",
+      "value": "Pusi"
+    },
+    "et": {
+      "language": "et",
+      "value": "Kass"
+    },
+    "bn": {
+      "language": "bn",
+      "value": "বিড়াল"
+    },
+    "chr": {
+      "language": "chr",
+      "value": "ᏪᏌ"
+    },
+    "br": {
+      "language": "br",
+      "value": "Kazh"
+    },
+    "rw": {
+      "language": "rw",
+      "value": "Injangwe"
+    },
+    "el": {
+      "language": "el",
+      "value": "Γάτα"
+    },
+    "na": {
+      "language": "na",
+      "value": "Butsi"
+    },
+    "bcl": {
+      "language": "bcl",
+      "value": "Ikos"
+    },
+    "ss": {
+      "language": "ss",
+      "value": "Likati"
+    },
+    "ba": {
+      "language": "ba",
+      "value": "Бесәй"
+    },
+    "pnb": {
+      "language": "pnb",
+      "value": "بلی"
+    },
+    "is": {
+      "language": "is",
+      "value": "Köttur"
+    },
+    "ru": {
+      "language": "ru",
+      "value": "кот/кошка"
+    },
+    "xal": {
+      "language": "xal",
+      "value": "Мис"
+    },
+    "ast": {
+      "language": "ast",
+      "value": "Gatu"
+    },
+    "tr": {
+      "language": "tr",
+      "value": "Kedi"
+    },
+    "sn": {
+      "language": "sn",
+      "value": "Katsi"
+    },
+    "se": {
+      "language": "se",
+      "value": "Bussá"
+    },
+    "mk": {
+      "language": "mk",
+      "value": "мачка"
+    },
+    "hak": {
+      "language": "hak",
+      "value": "Meu-é"
+    },
+    "stq": {
+      "language": "stq",
+      "value": "Kat"
+    },
+    "myv": {
+      "language": "myv",
+      "value": "Катка"
+    },
+    "si": {
+      "language": "si",
+      "value": "බළලා"
+    },
+    "nn": {
+      "language": "nn",
+      "value": "katt"
+    },
+    "io": {
+      "language": "io",
+      "value": "kato"
+    },
+    "mzn": {
+      "language": "mzn",
+      "value": "بامشی"
+    },
+    "ln": {
+      "language": "ln",
+      "value": "Nkɔ́ndɔkɔ́"
+    },
+    "tl": {
+      "language": "tl",
+      "value": "Pusa"
+    },
+    "nv": {
+      "language": "nv",
+      "value": "Mósí"
+    },
+    "kk": {
+      "language": "kk",
+      "value": "Мысық"
+    },
+    "nan": {
+      "language": "nan",
+      "value": "Niau"
+    },
+    "pam": {
+      "language": "pam",
+      "value": "Pusa"
+    },
+    "wa": {
+      "language": "wa",
+      "value": "Tchet"
+    },
+    "ha": {
+      "language": "ha",
+      "value": "Kyanwa"
+    },
+    "so": {
+      "language": "so",
+      "value": "Yaanyuur"
+    },
+    "ko": {
+      "language": "ko",
+      "value": "고양이"
+    },
+    "ug": {
+      "language": "ug",
+      "value": "مۈشۈك"
+    },
+    "ks": {
+      "language": "ks",
+      "value": "بیٲر"
+    },
+    "av": {
+      "language": "av",
+      "value": "Кето"
+    },
+    "lbe": {
+      "language": "lbe",
+      "value": "Ччиту"
+    },
+    "ace": {
+      "language": "ace",
+      "value": "mië"
+    },
+    "bar": {
+      "language": "bar",
+      "value": "Hauskotz"
+    },
+    "bug": {
+      "language": "bug",
+      "value": "meong"
+    },
+    "eml": {
+      "language": "eml",
+      "value": "Gàt"
+    },
+    "lv": {
+      "language": "lv",
+      "value": "kaķis"
+    },
+    "gl": {
+      "language": "gl",
+      "value": "Gato"
+    },
+    "id": {
+      "language": "id",
+      "value": "kucing"
+    },
+    "sh": {
+      "language": "sh",
+      "value": "Mačka"
+    },
+    "koi": {
+      "language": "koi",
+      "value": "Кань"
+    },
+    "scn": {
+      "language": "scn",
+      "value": "gattu"
+    },
+    "cu": {
+      "language": "cu",
+      "value": "Котъ"
+    },
+    "hi": {
+      "language": "hi",
+      "value": "बिल्ली"
+    },
+    "sd": {
+      "language": "sd",
+      "value": "ٻلي"
+    },
+    "hy": {
+      "language": "hy",
+      "value": "կատու"
+    },
+    "kn": {
+      "language": "kn",
+      "value": "ಬೆಕ್ಕು"
+    },
+    "cv": {
+      "language": "cv",
+      "value": "Кушак"
+    },
+    "fy": {
+      "language": "fy",
+      "value": "kat"
+    },
+    "ro": {
+      "language": "ro",
+      "value": "pisică de casă"
+    },
+    "nds-nl": {
+      "language": "nds-nl",
+      "value": "Kat"
+    },
+    "co": {
+      "language": "co",
+      "value": "Ghjattu"
+    },
+    "vep": {
+      "language": "vep",
+      "value": "Kaži"
+    },
+    "ilo": {
+      "language": "ilo",
+      "value": "Pusa"
+    },
+    "mg": {
+      "language": "mg",
+      "value": "Saka"
+    },
+    "sl": {
+      "language": "sl",
+      "value": "Domača mačka"
+    },
+    "war": {
+      "language": "war",
+      "value": "Misay"
+    },
+    "mhr": {
+      "language": "mhr",
+      "value": "Пырыс"
+    },
+    "fa": {
+      "language": "fa",
+      "value": "گربه"
+    },
+    "ka": {
+      "language": "ka",
+      "value": "შინაური კატა"
+    },
+    "pcd": {
+      "language": "pcd",
+      "value": "Cot"
+    },
+    "dsb": {
+      "language": "dsb",
+      "value": "Domacna kócka"
+    },
+    "nds": {
+      "language": "nds",
+      "value": "Katt"
+    },
+    "lt": {
+      "language": "lt",
+      "value": "Katė"
+    },
+    "vro": {
+      "language": "vro",
+      "value": "Kass"
+    },
+    "de": {
+      "language": "de",
+      "value": "Hauskatze"
+    },
+    "it": {
+      "language": "it",
+      "value": "gatto domestico"
+    },
+    "hif": {
+      "language": "hif",
+      "value": "Pusi"
+    },
+    "en-ca": {
+      "language": "en-ca",
+      "value": "cat"
+    },
+    "en-gb": {
+      "language": "en-gb",
+      "value": "cat"
+    },
+    "ar": {
+      "language": "ar",
+      "value": "قط"
+    },
+    "pt": {
+      "language": "pt",
+      "value": "gato"
+    },
+    "la": {
+      "language": "la",
+      "value": "Feles"
+    },
+    "fi": {
+      "language": "fi",
+      "value": "kissa"
+    },
+    "zh": {
+      "language": "zh",
+      "value": "猫"
+    },
+    "ja": {
+      "language": "ja",
+      "value": "ネコ"
+    },
+    "nb": {
+      "language": "nb",
+      "value": "katt"
+    },
+    "de-ch": {
+      "language": "de-ch",
+      "value": "Hauskatze"
+    },
+    "zh-hans": {
+      "language": "zh-hans",
+      "value": "猫"
+    },
+    "zh-hant": {
+      "language": "zh-hant",
+      "value": "貓"
+    },
+    "tt": {
+      "language": "tt",
+      "value": "мәче"
+    },
+    "new": {
+      "language": "new",
+      "value": "भौ"
+    },
+    "ps": {
+      "language": "ps",
+      "value": "پيشو"
+    },
+    "sa": {
+      "language": "sa",
+      "value": "मार्जालः"
+    },
+    "diq": {
+      "language": "diq",
+      "value": "Pısıng"
+    },
+    "lo": {
+      "language": "lo",
+      "value": "ແມວ"
+    },
+    "nov": {
+      "language": "nov",
+      "value": "Felis silvestris catus"
+    },
+    "my": {
+      "language": "my",
+      "value": "ကြောင်"
+    },
+    "vls": {
+      "language": "vls",
+      "value": "Katte"
+    },
+    "su": {
+      "language": "su",
+      "value": "ucing"
+    },
+    "zh-hk": {
+      "language": "zh-hk",
+      "value": "貓"
+    },
+    "bxr": {
+      "language": "bxr",
+      "value": "Миисгэй"
+    },
+    "kg": {
+      "language": "kg",
+      "value": "Nyawu"
+    },
+    "mwl": {
+      "language": "mwl",
+      "value": "Gato"
+    },
+    "lij": {
+      "language": "lij",
+      "value": "Felis sylvestris catus"
+    },
+    "xh": {
+      "language": "xh",
+      "value": "Ikati"
+    },
+    "ik": {
+      "language": "ik",
+      "value": "Kitiuraq"
+    },
+    "wuu": {
+      "language": "wuu",
+      "value": "貓"
+    },
+    "rup": {
+      "language": "rup",
+      "value": "Câtuși"
+    },
+    "ak": {
+      "language": "ak",
+      "value": "Agyinamoa"
+    },
+    "li": {
+      "language": "li",
+      "value": "Hoeskat"
+    },
+    "ku-latn": {
+      "language": "ku-latn",
+      "value": "Pisîk"
+    },
+    "ee": {
+      "language": "ee",
+      "value": "Dadzi"
+    },
+    "za": {
+      "language": "za",
+      "value": "Meuz"
+    },
+    "as": {
+      "language": "as",
+      "value": "মেকুৰী"
+    },
+    "gu": {
+      "language": "gu",
+      "value": "બિલાડી"
+    },
+    "sma": {
+      "language": "sma",
+      "value": "gaahtoe"
+    },
+    "pag": {
+      "language": "pag",
+      "value": "pusa"
+    },
+    "aeb-arab": {
+      "language": "aeb-arab",
+      "value": "قطّوس"
+    },
+    "aeb-latn": {
+      "language": "aeb-latn",
+      "value": "9a66ouc"
+    },
+    "ky": {
+      "language": "ky",
+      "value": "Бакма мышыктар"
+    },
+    "tcy": {
+      "language": "tcy",
+      "value": "ಪುಚ್ಚೆ"
+    },
+    "kab": {
+      "language": "kab",
+      "value": "Amcic"
+    },
+    "tt-cyrl": {
+      "language": "tt-cyrl",
+      "value": "мәче"
+    },
+    "tt-latn": {
+      "language": "tt-latn",
+      "value": "mäçe"
+    }
+  },
+  "descriptions": {
+    "en": {
+      "language": "en",
+      "value": "domesticated species of feline"
+    },
+    "fr": {
+      "language": "fr",
+      "value": "espèce de mammifères"
+    },
+    "de": {
+      "language": "de",
+      "value": "domestizierte Katze"
+    },
+    "it": {
+      "language": "it",
+      "value": "mammifero carnivoro della famiglia dei felidi"
+    },
+    "es": {
+      "language": "es",
+      "value": "especie doméstica de felino"
+    },
+    "nb": {
+      "language": "nb",
+      "value": "pattedyr"
+    },
+    "ru": {
+      "language": "ru",
+      "value": "домашнее животное"
+    },
+    "ca": {
+      "language": "ca",
+      "value": "petit mamífer carnívor domèstic"
+    },
+    "fi": {
+      "language": "fi",
+      "value": "Kissaeläinten heimoon kuuluva yleinen lemmikkieläin"
+    },
+    "ilo": {
+      "language": "ilo",
+      "value": "napaamo a sebbangan ti pusa"
+    },
+    "pt-br": {
+      "language": "pt-br",
+      "value": "espécie domesticada de felino"
+    },
+    "ta": {
+      "language": "ta",
+      "value": "பாலூட்டி விலங்கு"
+    },
+    "fa": {
+      "language": "fa",
+      "value": "جانوری اهلی از خانواده گربه سانان"
+    },
+    "nl": {
+      "language": "nl",
+      "value": "dier"
+    },
+    "en-ca": {
+      "language": "en-ca",
+      "value": "domesticated species of feline"
+    },
+    "pt": {
+      "language": "pt",
+      "value": "espécie domesticada de felino"
+    },
+    "mk": {
+      "language": "mk",
+      "value": "домашно животно"
+    },
+    "ja": {
+      "language": "ja",
+      "value": "ネコ目ネコ科ネコ属に分類される小型哺乳類"
+    },
+    "zh-hans": {
+      "language": "zh-hans",
+      "value": "小型猫科动物"
+    },
+    "id": {
+      "language": "id",
+      "value": "binatang"
+    },
+    "uk": {
+      "language": "uk",
+      "value": "невеликий ссавець ряду хижих (Carnivora) родини котових (Felidae)"
+    },
+    "hu": {
+      "language": "hu",
+      "value": "macskafélék családjába tartozó, háziasított emlős"
+    },
+    "la": {
+      "language": "la",
+      "value": "Feles domesticus, parvus carnivorus e familia Felidarum"
+    },
+    "da": {
+      "language": "da",
+      "value": "huskat"
+    },
+    "scn": {
+      "language": "scn",
+      "value": "specia dumèstica di filinu"
+    },
+    "sr": {
+      "language": "sr",
+      "value": "домаћа животиња"
+    },
+    "ro": {
+      "language": "ro",
+      "value": "pisică domesticită, specie de feline"
+    },
+    "ne": {
+      "language": "ne",
+      "value": "feline को घरेलु प्रजाति"
+    },
+    "gu": {
+      "language": "gu",
+      "value": "એક પ્રકારનું પાલતુ પાણી"
+    },
+    "ko": {
+      "language": "ko",
+      "value": "포유류에 속하는 동물이다. 일반적으로 고양이는 길들여진 집고양이(domestic cat)를 말한다."
+    },
+    "sv": {
+      "language": "sv",
+      "value": "däggdjur"
+    },
+    "el": {
+      "language": "el",
+      "value": "κατοικίδιο ζώο"
+    },
+    "bg": {
+      "language": "bg",
+      "value": "домашно животно"
+    },
+    "pl": {
+      "language": "pl",
+      "value": "Gatunek ssaka"
+    },
+    "ml": {
+      "language": "ml",
+      "value": "മനുഷ്യർ വളർത്തുന്ന ഒരു ഓമനമൃഗമാണ്‌ പൂച്ച (ഇംഗ്ലീഷ്: Cat/House Cat, ശാസ്ത്രീയനാമം: ഫെലിസ് കാതുസ് - Felis catus) എലിയെ പിടിക്കുവാനും കൂട്ടിനുമായാണ് പൂച്ചയെ വളർത്തുന്നത്"
+    },
+    "lv": {
+      "language": "lv",
+      "value": "Kaķi ir kā arī mājas dzīvnieki kā arī svvaļas dzīvnieki,bet vairāko ties mājas dzīvnieki"
+    },
+    "ar": {
+      "language": "ar",
+      "value": "حيوان من فصيلة السنوريات تم تدجينه من طرف الإنسان"
+    },
+    "cs": {
+      "language": "cs",
+      "value": "domestikovaná kočkovitá šelma"
+    },
+    "tt-cyrl": {
+      "language": "tt-cyrl",
+      "value": "йорт хайваны"
+    },
+    "tt-latn": {
+      "language": "tt-latn",
+      "value": "yort xaywanı"
+    },
+    "tt": {
+      "language": "tt",
+      "value": "йорт хайваны"
+    },
+    "hi": {
+      "language": "hi",
+      "value": "पाखंडी की पालतू प्रजातियों"
+    },
+    "gl": {
+      "language": "gl",
+      "value": "mamífero doméstico da familia dos felinos"
+    },
+    "th": {
+      "language": "th",
+      "value": "สัตว์ชนิดหนึ่ง"
+    },
+    "tr": {
+      "language": "tr",
+      "value": "evcilleştirilen kedi cinsi"
+    },
+    "jv": {
+      "language": "jv",
+      "value": "kewan"
+    }
+  },
+  "aliases": {
+    "en": [
+      {
+        "language": "en",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "en",
+        "value": "Felis catus"
+      },
+      {
+        "language": "en",
+        "value": "house cat"
+      },
+      {
+        "language": "en",
+        "value": "domestic cat"
+      },
+      {
+        "language": "en",
+        "value": "housecat"
+      }
+    ],
+    "sv": [
+      {
+        "language": "sv",
+        "value": "Semesterkatt"
+      },
+      {
+        "language": "sv",
+        "value": "Tamkatt"
+      },
+      {
+        "language": "sv",
+        "value": "Kattungar"
+      },
+      {
+        "language": "sv",
+        "value": "Katten"
+      },
+      {
+        "language": "sv",
+        "value": "Kissemiss"
+      },
+      {
+        "language": "sv",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "sv",
+        "value": "Katter"
+      },
+      {
+        "language": "sv",
+        "value": "Källing"
+      },
+      {
+        "language": "sv",
+        "value": "Felis catus"
+      },
+      {
+        "language": "sv",
+        "value": "Kissekatt"
+      },
+      {
+        "language": "sv",
+        "value": "Kattraser"
+      },
+      {
+        "language": "sv",
+        "value": "Kattunge"
+      },
+      {
+        "language": "sv",
+        "value": "Kattöra"
+      },
+      {
+        "language": "sv",
+        "value": "Kattras"
+      },
+      {
+        "language": "sv",
+        "value": "FIP"
+      },
+      {
+        "language": "sv",
+        "value": "Sommarkatt"
+      }
+    ],
+    "eu": [
+      {
+        "language": "eu",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "eu",
+        "value": "Felis catus"
+      },
+      {
+        "language": "eu",
+        "value": "etxe katu"
+      },
+      {
+        "language": "eu",
+        "value": "katua"
+      },
+      {
+        "language": "eu",
+        "value": "etxeko katu"
+      }
+    ],
+    "pl": [
+      {
+        "language": "pl",
+        "value": "Felis catus"
+      },
+      {
+        "language": "pl",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "bs": [
+      {
+        "language": "bs",
+        "value": "Domaća mačka"
+      }
+    ],
+    "es": [
+      {
+        "language": "es",
+        "value": "Felis catus"
+      },
+      {
+        "language": "es",
+        "value": "minino"
+      },
+      {
+        "language": "es",
+        "value": "gato doméstico"
+      },
+      {
+        "language": "es",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "es",
+        "value": "gata"
+      },
+      {
+        "language": "es",
+        "value": "michu"
+      },
+      {
+        "language": "es",
+        "value": "mopo"
+      },
+      {
+        "language": "es",
+        "value": "gato domestico"
+      }
+    ],
+    "oc": [
+      {
+        "language": "oc",
+        "value": "Chat domestic"
+      },
+      {
+        "language": "oc",
+        "value": "Cat"
+      },
+      {
+        "language": "oc",
+        "value": "Chats"
+      },
+      {
+        "language": "oc",
+        "value": "Chat"
+      },
+      {
+        "language": "oc",
+        "value": "Cat domestic"
+      },
+      {
+        "language": "oc",
+        "value": "Gat domestic"
+      },
+      {
+        "language": "oc",
+        "value": "Gat"
+      },
+      {
+        "language": "oc",
+        "value": "Gats"
+      }
+    ],
+    "hu": [
+      {
+        "language": "hu",
+        "value": "felis silvestris catus"
+      },
+      {
+        "language": "hu",
+        "value": "cica"
+      },
+      {
+        "language": "hu",
+        "value": "házimacska"
+      }
+    ],
+    "sw": [
+      {
+        "language": "sw",
+        "value": "Felis catus"
+      },
+      {
+        "language": "sw",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "sq": [
+      {
+        "language": "sq",
+        "value": "Maca"
+      },
+      {
+        "language": "sq",
+        "value": "Felis catus"
+      }
+    ],
+    "cdo": [
+      {
+        "language": "cdo",
+        "value": "Mà-giāng"
+      }
+    ],
+    "ia": [
+      {
+        "language": "ia",
+        "value": "Catto domestic"
+      }
+    ],
+    "ga": [
+      {
+        "language": "ga",
+        "value": "Cat clóis"
+      }
+    ],
+    "nl": [
+      {
+        "language": "nl",
+        "value": "Huiskat"
+      },
+      {
+        "language": "nl",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "nl",
+        "value": "Felis catus"
+      },
+      {
+        "language": "nl",
+        "value": "Felis silvestris f. catus"
+      },
+      {
+        "language": "nl",
+        "value": "Poezen"
+      },
+      {
+        "language": "nl",
+        "value": "Poes"
+      },
+      {
+        "language": "nl",
+        "value": "De poes"
+      },
+      {
+        "language": "nl",
+        "value": "Felis sylvestris catus"
+      }
+    ],
+    "sr": [
+      {
+        "language": "sr",
+        "value": "Муис"
+      },
+      {
+        "language": "sr",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "sr",
+        "value": "Macka"
+      },
+      {
+        "language": "sr",
+        "value": "Мујис"
+      },
+      {
+        "language": "sr",
+        "value": "Felis catus"
+      },
+      {
+        "language": "sr",
+        "value": "Felis ocreata domestica"
+      },
+      {
+        "language": "sr",
+        "value": "Мачка кућна"
+      },
+      {
+        "language": "sr",
+        "value": "Кућна мачка"
+      },
+      {
+        "language": "sr",
+        "value": "Мачка домаћа"
+      },
+      {
+        "language": "sr",
+        "value": "Домаћа мачка"
+      },
+      {
+        "language": "sr",
+        "value": "Мачке"
+      }
+    ],
+    "uk": [
+      {
+        "language": "uk",
+        "value": "Кицька"
+      },
+      {
+        "language": "uk",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "uk",
+        "value": "Свійський кіт"
+      },
+      {
+        "language": "uk",
+        "value": "Felis catus"
+      },
+      {
+        "language": "uk",
+        "value": "Свійська кішка"
+      },
+      {
+        "language": "uk",
+        "value": "Домашня кішка"
+      }
+    ],
+    "be-tarask": [
+      {
+        "language": "be-tarask",
+        "value": "Котка"
+      }
+    ],
+    "sah": [
+      {
+        "language": "sah",
+        "value": "Felis catus"
+      },
+      {
+        "language": "sah",
+        "value": "Мааска"
+      }
+    ],
+    "ne": [
+      {
+        "language": "ne",
+        "value": "विरालो"
+      }
+    ],
+    "az": [
+      {
+        "language": "az",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "az",
+        "value": "Felis catus domestica"
+      },
+      {
+        "language": "az",
+        "value": "Felis domestica"
+      },
+      {
+        "language": "az",
+        "value": "Felis catus"
+      }
+    ],
+    "hr": [
+      {
+        "language": "hr",
+        "value": "Mačka"
+      },
+      {
+        "language": "hr",
+        "value": "Mačak"
+      },
+      {
+        "language": "hr",
+        "value": "Kućna mačka"
+      },
+      {
+        "language": "hr",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "lmo": [
+      {
+        "language": "lmo",
+        "value": "Gat"
+      },
+      {
+        "language": "lmo",
+        "value": "Gàt"
+      },
+      {
+        "language": "lmo",
+        "value": "Gatt"
+      }
+    ],
+    "fur": [
+      {
+        "language": "fur",
+        "value": "Felis catus"
+      }
+    ],
+    "da": [
+      {
+        "language": "da",
+        "value": "Hankat"
+      },
+      {
+        "language": "da",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "da",
+        "value": "Felis domestica"
+      },
+      {
+        "language": "da",
+        "value": "Huskat"
+      },
+      {
+        "language": "da",
+        "value": "Vildkat"
+      },
+      {
+        "language": "da",
+        "value": "Kattekilling"
+      },
+      {
+        "language": "da",
+        "value": "Katten"
+      }
+    ],
+    "an": [
+      {
+        "language": "an",
+        "value": "Gato"
+      },
+      {
+        "language": "an",
+        "value": "Felis domesticus"
+      },
+      {
+        "language": "an",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "an",
+        "value": "Catus"
+      },
+      {
+        "language": "an",
+        "value": "Mixino"
+      },
+      {
+        "language": "an",
+        "value": "Mixíno"
+      }
+    ],
+    "vec": [
+      {
+        "language": "vec",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "gsw": [
+      {
+        "language": "gsw",
+        "value": "Katze"
+      }
+    ],
+    "udm": [
+      {
+        "language": "udm",
+        "value": "Писей"
+      },
+      {
+        "language": "udm",
+        "value": "Felis catus"
+      },
+      {
+        "language": "udm",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "nah": [
+      {
+        "language": "nah",
+        "value": "Miztōntli"
+      },
+      {
+        "language": "nah",
+        "value": "Mizton"
+      },
+      {
+        "language": "nah",
+        "value": "Gato"
+      }
+    ],
+    "arz": [
+      {
+        "language": "arz",
+        "value": "قطة"
+      },
+      {
+        "language": "arz",
+        "value": "بسه"
+      }
+    ],
+    "be": [
+      {
+        "language": "be",
+        "value": "Кот"
+      },
+      {
+        "language": "be",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "be",
+        "value": "Котка"
+      },
+      {
+        "language": "be",
+        "value": "Felis catus"
+      },
+      {
+        "language": "be",
+        "value": "Кошка"
+      }
+    ],
+    "he": [
+      {
+        "language": "he",
+        "value": "חתלתול"
+      },
+      {
+        "language": "he",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "he",
+        "value": "Felis"
+      },
+      {
+        "language": "he",
+        "value": "חתול בית"
+      },
+      {
+        "language": "he",
+        "value": "חתול"
+      }
+    ],
+    "lad": [
+      {
+        "language": "lad",
+        "value": "Felis Silvestris Catus"
+      }
+    ],
+    "yo": [
+      {
+        "language": "yo",
+        "value": "Felis catus"
+      },
+      {
+        "language": "yo",
+        "value": "Ológìnní"
+      }
+    ],
+    "ml": [
+      {
+        "language": "ml",
+        "value": "നാട്ടുപൂച്ച"
+      },
+      {
+        "language": "ml",
+        "value": "നാട്ടുപൂച്ച‍"
+      },
+      {
+        "language": "ml",
+        "value": "Cat"
+      }
+    ],
+    "vi": [
+      {
+        "language": "vi",
+        "value": "Con mèo"
+      },
+      {
+        "language": "vi",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "vi",
+        "value": "Mèo Con"
+      },
+      {
+        "language": "vi",
+        "value": "Felis catus"
+      },
+      {
+        "language": "vi",
+        "value": "Mèo nhà"
+      }
+    ],
+    "sc": [
+      {
+        "language": "sc",
+        "value": "Battu,'attu"
+      }
+    ],
+    "yue": [
+      {
+        "language": "yue",
+        "value": "猫"
+      },
+      {
+        "language": "yue",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "yue",
+        "value": "家貓"
+      }
+    ],
+    "hsb": [
+      {
+        "language": "hsb",
+        "value": "Kóčka domjaca"
+      },
+      {
+        "language": "hsb",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "lzh": [
+      {
+        "language": "lzh",
+        "value": "猫"
+      }
+    ],
+    "tg": [
+      {
+        "language": "tg",
+        "value": "Пишак"
+      }
+    ],
+    "ku": [
+      {
+        "language": "ku",
+        "value": "Pisîkan"
+      }
+    ],
+    "ext": [
+      {
+        "language": "ext",
+        "value": "Gatu"
+      }
+    ],
+    "mn": [
+      {
+        "language": "mn",
+        "value": "Гэрийн муур"
+      }
+    ],
+    "th": [
+      {
+        "language": "th",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "th",
+        "value": "Felis catus"
+      },
+      {
+        "language": "th",
+        "value": "แมววิลาศ"
+      },
+      {
+        "language": "th",
+        "value": "แมวเลี้ยง"
+      },
+      {
+        "language": "th",
+        "value": "แมวบ้าน"
+      },
+      {
+        "language": "th",
+        "value": "วิฬาร"
+      },
+      {
+        "language": "th",
+        "value": "วิฬาร์"
+      }
+    ],
+    "ca": [
+      {
+        "language": "ca",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "ca",
+        "value": "Moix"
+      },
+      {
+        "language": "ca",
+        "value": "Gat esgarrapador"
+      },
+      {
+        "language": "ca",
+        "value": "Gates femelles"
+      },
+      {
+        "language": "ca",
+        "value": "Felis domesticus"
+      },
+      {
+        "language": "ca",
+        "value": "Gat domèstic"
+      },
+      {
+        "language": "ca",
+        "value": "Gats"
+      },
+      {
+        "language": "ca",
+        "value": "Gat amb classe"
+      }
+    ],
+    "cs": [
+      {
+        "language": "cs",
+        "value": "Felis silvestris f. catus"
+      },
+      {
+        "language": "cs",
+        "value": "Felis catus"
+      },
+      {
+        "language": "cs",
+        "value": "kočka"
+      }
+    ],
+    "os": [
+      {
+        "language": "os",
+        "value": "Felis catus"
+      },
+      {
+        "language": "os",
+        "value": "Тикис"
+      },
+      {
+        "language": "os",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "mr": [
+      {
+        "language": "mr",
+        "value": "घरगुती मांजर"
+      }
+    ],
+    "bg": [
+      {
+        "language": "bg",
+        "value": "Felis catus"
+      },
+      {
+        "language": "bg",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "bg",
+        "value": "Домашна котка"
+      }
+    ],
+    "arc": [
+      {
+        "language": "arc",
+        "value": "ܩܛܘܢܬܐ"
+      },
+      {
+        "language": "arc",
+        "value": "ܩܛܘܢܐ"
+      },
+      {
+        "language": "arc",
+        "value": "ܩܛܘ"
+      }
+    ],
+    "te": [
+      {
+        "language": "te",
+        "value": "పిల్లులు"
+      },
+      {
+        "language": "te",
+        "value": "మార్జాలం"
+      }
+    ],
+    "zu": [
+      {
+        "language": "zu",
+        "value": "Felis catus"
+      }
+    ],
+    "gv": [
+      {
+        "language": "gv",
+        "value": "Screeberagh"
+      },
+      {
+        "language": "gv",
+        "value": "Kayt thieoil"
+      },
+      {
+        "language": "gv",
+        "value": "Screeberey"
+      }
+    ],
+    "bo": [
+      {
+        "language": "bo",
+        "value": "ཞི་མི"
+      },
+      {
+        "language": "bo",
+        "value": "ཞི་མི་"
+      }
+    ],
+    "qu": [
+      {
+        "language": "qu",
+        "value": "Gato"
+      },
+      {
+        "language": "qu",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "qu",
+        "value": "Misi"
+      },
+      {
+        "language": "qu",
+        "value": "Mishi"
+      }
+    ],
+    "af": [
+      {
+        "language": "af",
+        "value": "Felis catus"
+      },
+      {
+        "language": "af",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "ltg": [
+      {
+        "language": "ltg",
+        "value": "Sātys kačs"
+      }
+    ],
+    "ce": [
+      {
+        "language": "ce",
+        "value": "Цициг"
+      }
+    ],
+    "to": [
+      {
+        "language": "to",
+        "value": "Felis catus"
+      },
+      {
+        "language": "to",
+        "value": "Felis silvestris"
+      },
+      {
+        "language": "to",
+        "value": "Felis domesticus"
+      }
+    ],
+    "et": [
+      {
+        "language": "et",
+        "value": "Kodukass"
+      },
+      {
+        "language": "et",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "et",
+        "value": "Felis catus"
+      },
+      {
+        "language": "et",
+        "value": "Kiisu"
+      }
+    ],
+    "chr": [
+      {
+        "language": "chr",
+        "value": "ᏪᏏ"
+      },
+      {
+        "language": "chr",
+        "value": "ᏪᏍ"
+      },
+      {
+        "language": "chr",
+        "value": "Cat"
+      }
+    ],
+    "br": [
+      {
+        "language": "br",
+        "value": "Kazh doñv"
+      }
+    ],
+    "rw": [
+      {
+        "language": "rw",
+        "value": "Ipusi"
+      },
+      {
+        "language": "rw",
+        "value": "Felis catus"
+      }
+    ],
+    "el": [
+      {
+        "language": "el",
+        "value": "Γατάκι"
+      },
+      {
+        "language": "el",
+        "value": "Γαλή"
+      },
+      {
+        "language": "el",
+        "value": "Γατί"
+      },
+      {
+        "language": "el",
+        "value": "Felis catus"
+      }
+    ],
+    "is": [
+      {
+        "language": "is",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "is",
+        "value": "Kisa"
+      },
+      {
+        "language": "is",
+        "value": "Húnköttur"
+      },
+      {
+        "language": "is",
+        "value": "Heimilisköttur"
+      },
+      {
+        "language": "is",
+        "value": "Læða"
+      },
+      {
+        "language": "is",
+        "value": "Húsköttur"
+      },
+      {
+        "language": "is",
+        "value": "Fress"
+      },
+      {
+        "language": "is",
+        "value": "Búköttur"
+      },
+      {
+        "language": "is",
+        "value": "Kisi"
+      }
+    ],
+    "ru": [
+      {
+        "language": "ru",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "ru",
+        "value": "Felis silvestris forma catus"
+      },
+      {
+        "language": "ru",
+        "value": "Felis catus"
+      },
+      {
+        "language": "ru",
+        "value": "Felis catus domestica"
+      },
+      {
+        "language": "ru",
+        "value": "кот"
+      },
+      {
+        "language": "ru",
+        "value": "кошки"
+      },
+      {
+        "language": "ru",
+        "value": "домашняя кошка"
+      },
+      {
+        "language": "ru",
+        "value": "кошка домашняя"
+      },
+      {
+        "language": "ru",
+        "value": "котёнок"
+      }
+    ],
+    "ast": [
+      {
+        "language": "ast",
+        "value": "Felis domesticus"
+      },
+      {
+        "language": "ast",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "ast",
+        "value": "Catus"
+      }
+    ],
+    "tr": [
+      {
+        "language": "tr",
+        "value": "Ev kedisi"
+      },
+      {
+        "language": "tr",
+        "value": "Kedilerin özellikleri"
+      }
+    ],
+    "sn": [
+      {
+        "language": "sn",
+        "value": "Kat"
+      },
+      {
+        "language": "sn",
+        "value": "Mangoyi"
+      },
+      {
+        "language": "sn",
+        "value": "Kato"
+      }
+    ],
+    "se": [
+      {
+        "language": "se",
+        "value": "Gáhttu"
+      }
+    ],
+    "myv": [
+      {
+        "language": "myv",
+        "value": "Псака"
+      }
+    ],
+    "si": [
+      {
+        "language": "si",
+        "value": "පූසා"
+      },
+      {
+        "language": "si",
+        "value": "බළලා හෙවත් පූසා"
+      }
+    ],
+    "nn": [
+      {
+        "language": "nn",
+        "value": "Tamkatt"
+      },
+      {
+        "language": "nn",
+        "value": "Katter"
+      },
+      {
+        "language": "nn",
+        "value": "Kattungar"
+      },
+      {
+        "language": "nn",
+        "value": "Huskatt"
+      },
+      {
+        "language": "nn",
+        "value": "Kattunger"
+      },
+      {
+        "language": "nn",
+        "value": "Katten"
+      },
+      {
+        "language": "nn",
+        "value": "Kattar"
+      }
+    ],
+    "ln": [
+      {
+        "language": "ln",
+        "value": "Nyáo"
+      },
+      {
+        "language": "ln",
+        "value": "Púsu"
+      }
+    ],
+    "tl": [
+      {
+        "language": "tl",
+        "value": "F. catus"
+      },
+      {
+        "language": "tl",
+        "value": "Felis silvestris"
+      },
+      {
+        "language": "tl",
+        "value": "Mga pusa"
+      },
+      {
+        "language": "tl",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "tl",
+        "value": "F. s. catus"
+      },
+      {
+        "language": "tl",
+        "value": "F. silvestris"
+      },
+      {
+        "language": "tl",
+        "value": "Felis catus"
+      },
+      {
+        "language": "tl",
+        "value": "Iring"
+      },
+      {
+        "language": "tl",
+        "value": "Ireng"
+      }
+    ],
+    "nv": [
+      {
+        "language": "nv",
+        "value": "Gídí"
+      },
+      {
+        "language": "nv",
+        "value": "Másí"
+      }
+    ],
+    "kk": [
+      {
+        "language": "kk",
+        "value": "Мысықтар"
+      }
+    ],
+    "nan": [
+      {
+        "language": "nan",
+        "value": "Bâ-á"
+      },
+      {
+        "language": "nan",
+        "value": "Niau-á"
+      },
+      {
+        "language": "nan",
+        "value": "Ka-niau"
+      },
+      {
+        "language": "nan",
+        "value": "Bâ"
+      }
+    ],
+    "wa": [
+      {
+        "language": "wa",
+        "value": "Felis catus"
+      }
+    ],
+    "ha": [
+      {
+        "language": "ha",
+        "value": "Felis catus"
+      }
+    ],
+    "so": [
+      {
+        "language": "so",
+        "value": "Bisad"
+      }
+    ],
+    "ko": [
+      {
+        "language": "ko",
+        "value": "도둑고양이"
+      },
+      {
+        "language": "ko",
+        "value": "집고양이"
+      },
+      {
+        "language": "ko",
+        "value": "길고양이"
+      }
+    ],
+    "av": [
+      {
+        "language": "av",
+        "value": "Felis catus"
+      }
+    ],
+    "lbe": [
+      {
+        "language": "lbe",
+        "value": "Felis catus"
+      }
+    ],
+    "ace": [
+      {
+        "language": "ace",
+        "value": "Felis catus"
+      }
+    ],
+    "bar": [
+      {
+        "language": "bar",
+        "value": "Kåtzn"
+      },
+      {
+        "language": "bar",
+        "value": "Katze"
+      },
+      {
+        "language": "bar",
+        "value": "Katzn"
+      },
+      {
+        "language": "bar",
+        "value": "Katzen"
+      },
+      {
+        "language": "bar",
+        "value": "Kotz"
+      },
+      {
+        "language": "bar",
+        "value": "Kåtz"
+      },
+      {
+        "language": "bar",
+        "value": "Katz"
+      }
+    ],
+    "eml": [
+      {
+        "language": "eml",
+        "value": "Gat"
+      },
+      {
+        "language": "eml",
+        "value": "Felis catus"
+      }
+    ],
+    "lv": [
+      {
+        "language": "lv",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "lv",
+        "value": "Mājas kaķis"
+      },
+      {
+        "language": "lv",
+        "value": "Felis catus"
+      },
+      {
+        "language": "lv",
+        "value": "Runcis"
+      },
+      {
+        "language": "lv",
+        "value": "Kaķene"
+      }
+    ],
+    "gl": [
+      {
+        "language": "gl",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "sh": [
+      {
+        "language": "sh",
+        "value": "Domaća mačka"
+      }
+    ],
+    "koi": [
+      {
+        "language": "koi",
+        "value": "Felis catus"
+      }
+    ],
+    "scn": [
+      {
+        "language": "scn",
+        "value": "jatta"
+      },
+      {
+        "language": "scn",
+        "value": "jattu"
+      },
+      {
+        "language": "scn",
+        "value": "iattu"
+      },
+      {
+        "language": "scn",
+        "value": "attu"
+      }
+    ],
+    "cu": [
+      {
+        "language": "cu",
+        "value": "Ко́тъ"
+      }
+    ],
+    "hi": [
+      {
+        "language": "hi",
+        "value": "बिल्लियाँ"
+      }
+    ],
+    "sd": [
+      {
+        "language": "sd",
+        "value": "ېلي"
+      }
+    ],
+    "hy": [
+      {
+        "language": "hy",
+        "value": "Ընտանի կատու"
+      },
+      {
+        "language": "hy",
+        "value": "Felis catus"
+      },
+      {
+        "language": "hy",
+        "value": "Կատուներ"
+      }
+    ],
+    "fy": [
+      {
+        "language": "fy",
+        "value": "Boarre"
+      }
+    ],
+    "ro": [
+      {
+        "language": "ro",
+        "value": "Pisici"
+      },
+      {
+        "language": "ro",
+        "value": "Mâță"
+      },
+      {
+        "language": "ro",
+        "value": "Pisica"
+      },
+      {
+        "language": "ro",
+        "value": "Felis silvestris"
+      },
+      {
+        "language": "ro",
+        "value": "Pisica de casă"
+      },
+      {
+        "language": "ro",
+        "value": "pisică domestică"
+      }
+    ],
+    "nds-nl": [
+      {
+        "language": "nds-nl",
+        "value": "Katte"
+      }
+    ],
+    "co": [
+      {
+        "language": "co",
+        "value": "Gattu"
+      }
+    ],
+    "ilo": [
+      {
+        "language": "ilo",
+        "value": "Cat"
+      }
+    ],
+    "sl": [
+      {
+        "language": "sl",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "sl",
+        "value": "Domače mačke"
+      }
+    ],
+    "war": [
+      {
+        "language": "war",
+        "value": "Uding"
+      },
+      {
+        "language": "war",
+        "value": "Udíng"
+      }
+    ],
+    "mhr": [
+      {
+        "language": "mhr",
+        "value": "Felis catus"
+      }
+    ],
+    "fa": [
+      {
+        "language": "fa",
+        "value": "پیشی"
+      },
+      {
+        "language": "fa",
+        "value": "گربهٔ اهلی"
+      },
+      {
+        "language": "fa",
+        "value": "گربه اهلی"
+      },
+      {
+        "language": "fa",
+        "value": "پشک"
+      },
+      {
+        "language": "fa",
+        "value": "نماد جهانی ایران"
+      },
+      {
+        "language": "fa",
+        "value": "گربۀ ایرانی"
+      }
+    ],
+    "pcd": [
+      {
+        "language": "pcd",
+        "value": "Felis catus"
+      },
+      {
+        "language": "pcd",
+        "value": "Cat"
+      }
+    ],
+    "dsb": [
+      {
+        "language": "dsb",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "nds": [
+      {
+        "language": "nds",
+        "value": "Kater"
+      },
+      {
+        "language": "nds",
+        "value": "Bolzen"
+      }
+    ],
+    "lt": [
+      {
+        "language": "lt",
+        "value": "Naminė katė"
+      },
+      {
+        "language": "lt",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "lt",
+        "value": "Katės"
+      }
+    ],
+    "it": [
+      {
+        "language": "it",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "it",
+        "value": "Felis catus"
+      },
+      {
+        "language": "it",
+        "value": "gatto"
+      }
+    ],
+    "nb": [
+      {
+        "language": "nb",
+        "value": "tamkatt"
+      },
+      {
+        "language": "nb",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "nb",
+        "value": "Huskatt"
+      },
+      {
+        "language": "nb",
+        "value": "Felis catus"
+      },
+      {
+        "language": "nb",
+        "value": "Kattene"
+      },
+      {
+        "language": "nb",
+        "value": "Katt"
+      },
+      {
+        "language": "nb",
+        "value": "Pusekatt"
+      },
+      {
+        "language": "nb",
+        "value": "Kattunge"
+      },
+      {
+        "language": "nb",
+        "value": "Kattepus"
+      },
+      {
+        "language": "nb",
+        "value": "Pus"
+      }
+    ],
+    "de": [
+      {
+        "language": "de",
+        "value": "Katze"
+      },
+      {
+        "language": "de",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "fi": [
+      {
+        "language": "fi",
+        "value": "kesykissa"
+      },
+      {
+        "language": "fi",
+        "value": "kotikissa"
+      },
+      {
+        "language": "fi",
+        "value": "Felis catus"
+      },
+      {
+        "language": "fi",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "fi",
+        "value": "Felis catus domestica"
+      }
+    ],
+    "pt-br": [
+      {
+        "language": "pt-br",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "pt-br",
+        "value": "gato caseiro"
+      },
+      {
+        "language": "pt-br",
+        "value": "gato urbano"
+      },
+      {
+        "language": "pt-br",
+        "value": "gato doméstico"
+      }
+    ],
+    "pt": [
+      {
+        "language": "pt",
+        "value": "Felis silvestris catus"
+      }
+    ],
+    "brh": [
+      {
+        "language": "brh",
+        "value": "Felis catus"
+      }
+    ],
+    "fr": [
+      {
+        "language": "fr",
+        "value": "Felis silvestris catus"
+      },
+      {
+        "language": "fr",
+        "value": "Felis catus"
+      },
+      {
+        "language": "fr",
+        "value": "chat domestique"
+      }
+    ],
+    "ja": [
+      {
+        "language": "ja",
+        "value": "猫"
+      },
+      {
+        "language": "ja",
+        "value": "イエネコ"
+      }
+    ],
+    "eo": [
+      {
+        "language": "eo",
+        "value": "kato"
+      }
+    ],
+    "ak": [
+      {
+        "language": "ak",
+        "value": ")kra"
+      }
+    ],
+    "tt-cyrl": [
+      {
+        "language": "tt-cyrl",
+        "value": "песи"
+      }
+    ],
+    "tt-latn": [
+      {
+        "language": "tt-latn",
+        "value": "pesi"
+      }
+    ],
+    "tt": [
+      {
+        "language": "tt",
+        "value": "песи"
+      }
+    ],
+    "id": [
+      {
+        "language": "id",
+        "value": "Felis catus"
+      }
+    ],
+    "ban": [
+      {
+        "language": "ban",
+        "value": "Felis catus"
+      }
+    ],
+    "bjn": [
+      {
+        "language": "bjn",
+        "value": "Felis catus"
+      }
+    ],
+    "bug": [
+      {
+        "language": "bug",
+        "value": "Felis catus"
+      }
+    ],
+    "jv": [
+      {
+        "language": "jv",
+        "value": "Felis catus"
+      }
+    ],
+    "map-bms": [
+      {
+        "language": "map-bms",
+        "value": "Felis catus"
+      }
+    ],
+    "min": [
+      {
+        "language": "min",
+        "value": "Felis catus"
+      }
+    ],
+    "ms": [
+      {
+        "language": "ms",
+        "value": "Felis catus"
+      }
+    ],
+    "su": [
+      {
+        "language": "su",
+        "value": "Felis catus"
+      }
+    ]
+  },
+  "claims": {
+    "P487": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P487",
+          "datavalue": {
+            "value": "🐈",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "id": "Q146$ea51742a-4eb3-bc42-e499-4176c77389d3",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P487",
+          "datavalue": {
+            "value": "🐱",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "id": "Q146$27bf33a1-4421-32bb-2848-496d18881801",
+        "rank": "normal"
+      }
+    ],
+    "P105": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P105",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 68947,
+              "id": "Q68947"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "q146$B1E6CDBF-0229-4C2D-B66F-7544364BCB8D",
+        "rank": "normal"
+      }
+    ],
+    "P171": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P171",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 43576,
+              "id": "Q43576"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$efe89d9b-45c9-1188-d1ea-335e0024f59a",
+        "rank": "normal"
+      }
+    ],
+    "P225": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P225",
+          "datavalue": {
+            "value": "Felis silvestris catus",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P405": [
+            {
+              "snaktype": "value",
+              "property": "P405",
+              "hash": "a817d3670bc2f9a3586b6377a65d54fff72ef888",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1043,
+                  "id": "Q1043"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ],
+          "P574": [
+            {
+              "snaktype": "value",
+              "property": "P574",
+              "hash": "142e122bc6a7c99029b4d401724c9e6d3eaeab34",
+              "datavalue": {
+                "value": {
+                  "time": "+1758-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 9,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P405",
+          "P574"
+        ],
+        "id": "q146$FFA37FDA-A770-47C7-B45A-FC2840B9D9E5",
+        "rank": "normal"
+      }
+    ],
+    "P31": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 502895,
+              "id": "Q502895"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P642": [
+            {
+              "snaktype": "value",
+              "property": "P642",
+              "hash": "c6ab04e0acb6d56f056057c9e5ec96f4f0008b16",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 20980826,
+                  "id": "Q20980826"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P642"
+        ],
+        "id": "q146$d9ee078b-4321-ebf7-8bf6-4df56dd84e2c",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 16521,
+              "id": "Q16521"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$8e0c42c1-492f-741e-1aa1-1cf5ba648f74",
+        "rank": "normal"
+      }
+    ],
+    "P373": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P373",
+          "datavalue": {
+            "value": "Felis silvestris catus",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "id": "q146$a6c87191-4a21-2aa0-57a3-264fd350f5f9",
+        "rank": "normal"
+      }
+    ],
+    "P227": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P227",
+          "datavalue": {
+            "value": "4030046-8",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "q146$0d7ca6ae-4947-9759-ecd6-994efdb03ceb",
+        "rank": "normal"
+      }
+    ],
+    "P508": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P508",
+          "datavalue": {
+            "value": "3206",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "q146$C62D8B68-125A-42BA-BC11-63F294EEEB94",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "b7232a03e568ea326dacdccb6322adb7894300d5",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 460907,
+                      "id": "Q460907"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ],
+    "P910": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P910",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 5615807,
+              "id": "Q5615807"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$703442D0-53FB-4DF4-91D6-40C8B5862D95",
+        "rank": "normal"
+      }
+    ],
+    "P18": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P18",
+          "datavalue": {
+            "value": "Collage of Six Cats-01.jpg",
+            "type": "string"
+          },
+          "datatype": "commonsMedia"
+        },
+        "type": "statement",
+        "id": "Q146$3F3A930A-C130-4265-BA0E-BFE42EB5DFB7",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P18",
+          "datavalue": {
+            "value": "Pumiforme.JPG",
+            "type": "string"
+          },
+          "datatype": "commonsMedia"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P2096": [
+            {
+              "snaktype": "value",
+              "property": "P2096",
+              "hash": "6bac0d5ee526bd91dfc79e613b36c5f53b39c6e2",
+              "datavalue": {
+                "value": {
+                  "text": "Gat domèstic",
+                  "language": "ca"
+                },
+                "type": "monolingualtext"
+              },
+              "datatype": "monolingualtext"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P2096"
+        ],
+        "id": "Q146$45E1A931-211D-4D30-8658-11BA6169388C",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "b3fd5e254143d8b52cd96cff43af9af5e3a82358",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 199693,
+                      "id": "Q199693"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ],
+    "P646": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P646",
+          "datavalue": {
+            "value": "/m/01yrx",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$5AEC071B-8953-48E1-A339-5550F4597AC9",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+            "snaks": {
+              "P248": [
+                {
+                  "snaktype": "value",
+                  "property": "P248",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 15241312,
+                      "id": "Q15241312"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ],
+              "P577": [
+                {
+                  "snaktype": "value",
+                  "property": "P577",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2013-10-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P248",
+              "P577"
+            ]
+          }
+        ]
+      }
+    ],
+    "P1036": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1036",
+          "datavalue": {
+            "value": "636.8",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "id": "Q146$c7f8602d-4c6c-83eb-1536-d8fc83116e03",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1036",
+          "datavalue": {
+            "value": "599.752",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "id": "Q146$ebfb49bb-444f-5b84-7a24-0f3963f633f6",
+        "rank": "normal"
+      }
+    ],
+    "P1051": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1051",
+          "datavalue": {
+            "value": "887",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$4d51eca8-4f89-b1b9-836f-23efedb34d67",
+        "rank": "normal"
+      }
+    ],
+    "P366": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P366",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 39201,
+              "id": "Q39201"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$0ec315e4-4834-44af-abc8-4c5d7ddae86e",
+        "rank": "normal"
+      }
+    ],
+    "P1542": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1542",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 1736897,
+              "id": "Q1736897"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$32363F25-036B-42CF-90AE-EA87C408C113",
+        "rank": "normal"
+      }
+    ],
+    "P935": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P935",
+          "datavalue": {
+            "value": "Felis silvestris catus",
+            "type": "string"
+          },
+          "datatype": "string"
+        },
+        "type": "statement",
+        "id": "Q146$E8665B67-A11A-4CC1-8B9A-00637FC99856",
+        "rank": "normal"
+      }
+    ],
+    "P2167": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P2167",
+          "datavalue": {
+            "value": "10101501",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$EDADDCA6-BEBC-4A0D-8372-93B7BFDC6742",
+        "rank": "normal"
+      }
+    ],
+    "P1014": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1014",
+          "datavalue": {
+            "value": "300265960",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$DDC6CA62-F7BD-4EF8-B71D-888F379530CB",
+        "rank": "normal"
+      }
+    ],
+    "P1417": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1417",
+          "datavalue": {
+            "value": "animal/cat",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$9659a3b0-4704-0b09-e1c9-1e0ca421be69",
+        "rank": "normal"
+      }
+    ],
+    "P3063": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3063",
+          "datavalue": {
+            "value": {
+              "amount": "+64",
+              "unit": "http://www.wikidata.org/entity/Q573"
+            },
+            "type": "quantity"
+          },
+          "datatype": "quantity"
+        },
+        "type": "statement",
+        "id": "Q146$8032bb64-4203-5a55-4112-1a0d32bae446",
+        "rank": "normal"
+      }
+    ],
+    "P2959": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P2959",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 21201177,
+              "id": "Q21201177"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$FE307CF4-ADD2-40B8-80CC-987E54AFB4FC",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "8bc722e6797143f2ba971ee5fedaeb0a331268e6",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1975217,
+                      "id": "Q1975217"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ],
+    "P3219": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3219",
+          "datavalue": {
+            "value": "chat-domestique",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$5e8b1fe6-4acd-2d58-50e3-90a28a7abf74",
+        "rank": "normal"
+      }
+    ],
+    "P3221": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3221",
+          "datavalue": {
+            "value": "subject/cats",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$8B0C6403-0476-41C9-A70B-0ECD26AA6253",
+        "rank": "normal"
+      }
+    ],
+    "P1843": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kat",
+              "language": "af"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$3E323558-1985-4BFD-B0A7-BB5091BF65FF",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Agyinamoa/ )kra",
+              "language": "ak"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$8F225C7C-3D60-486B-B660-1D4D27474F91",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Hauskotz",
+              "language": "bar"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$AB417A37-9E74-4F52-B72B-3AE968C81D77",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kotz",
+              "language": "bar"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$A3C2CEFC-9713-49AE-A75F-71A0A79E093F",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Котка",
+              "language": "bg"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$187DD933-11CD-42C2-94A0-1DEBE7E9FFDB",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kazh",
+              "language": "br"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$FA87EB15-6FF5-4CE5-A1F7-149794E411EE",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Gat",
+              "language": "ca"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$161DC894-33FC-489A-A4E0-A2787643C44F",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Iring",
+              "language": "ceb"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$0DD595F0-927C-48B4-A8BD-E7E554B6D687",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Huskat",
+              "language": "da"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$5095DD6F-3DBC-4C13-BB31-A436E2BF641F",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Hauskatze",
+              "language": "de"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$D33E098F-BCCA-4FCA-8E26-511E99342BCE",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Dadi",
+              "language": "ee"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$2FE3C976-D5F2-467D-BE5C-CE3574DB80ED",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Γάτα",
+              "language": "el"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$4E3749C3-493A-46AA-871A-394C21415EF4",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Domestic cat",
+              "language": "en"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$E1512FBD-85D4-4EF4-B84D-38F5615510F1",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kato",
+              "language": "eo"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$54FE3A0A-E845-4D71-A8A6-0D08D5758B3B",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Gato doméstico",
+              "language": "es"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$E302A65A-D5B0-47E9-A88D-7A57C1268E8B",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kass",
+              "language": "et"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$6EF1FEC9-E571-4506-84AD-6DC60B309796",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kodukass",
+              "language": "et"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$3E971D22-CAB2-4008-B315-B233FE596E3F",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kat u",
+              "language": "eu"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$019FAD1A-C19D-4EAE-902A-DF912DD04E40",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "گربه",
+              "language": "fa"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$08E5D321-3F90-4ADA-AD16-E38C47F2282B",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kesykissa",
+              "language": "fi"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$C7A04516-3E1B-40C6-90A2-62E1B01830FC",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Chat domestique",
+              "language": "fr"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$0BC5860A-41AE-4CCC-9001-E85256CE9064",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Pōpoki",
+              "language": "haw"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$B79B8BF4-8633-41DD-A205-3AC57504D583",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "חתול הבית",
+              "language": "he"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$49D88BC2-9511-45A8-9F44-92ECA6C5F754",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "बिल्ली",
+              "language": "hi"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$D59C48F1-1DA8-4BF4-B574-AD57D9E6C7EB",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Domaća mačka",
+              "language": "hr"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$DB07E4EE-9554-4C80-81D3-6CC6C80B6223",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Házimacska",
+              "language": "hu"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$4780603C-9DC8-4C38-85DD-818EA1A14382",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Կատու",
+              "language": "hy"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$1570DD7D-19B0-4BBD-A359-05D4DBFA322F",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kucing",
+              "language": "id"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$A1FDECF8-7CB7-4AC5-B0ED-15770D54E0D2",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Húsköttur",
+              "language": "is"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$2F72C8D0-C9B8-49FC-A198-5DBD47094D36",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Gatto domestico",
+              "language": "it"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$ABB44566-0F0F-40F7-9820-9E2FE2F159B7",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "ネコ",
+              "language": "ja"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$F72D79A1-13F9-4A25-B540-76A5694C205D",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "고양이",
+              "language": "ko"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$6BF28512-A16E-4561-93EB-806FB9E7CD75",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Gatto",
+              "language": "lij"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$D7969894-86CD-4848-B5D3-69A5AA777858",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Mājas kaķis",
+              "language": "lv"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$4EF4C821-958F-451C-9518-C94ADAE698D6",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "പൂച്ച",
+              "language": "ml"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$AB9B63C2-61B3-4B22-98C7-944C5B6DBCA5",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Qattus",
+              "language": "mt"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$20B3E843-BA25-4830-A4EF-E666152C0625",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Huiskat",
+              "language": "nl"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$FFB46BCC-6CF8-4381-96A9-6A79D578EFCE",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Huskatt",
+              "language": "nb"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$224AE34B-466D-4D9A-A9DA-89DDB2BC2386",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kot domowy",
+              "language": "pl"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$70C0A5C2-9EAF-4E2E-9A0F-D458254BDDC5",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Gato doméstico",
+              "language": "pt"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$4A1602C9-89BF-414D-A73C-822AC736FA39",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "pisică domestică",
+              "language": "ro"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$D6411CF4-7703-42D5-9378-39E40BE994B4",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Домашняя кошка",
+              "language": "ru"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$48E8C7F6-C926-4210-907F-D1632345CD2D",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Gattu",
+              "language": "sc"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$D22FB668-1373-4C16-9F10-0A4F84A584A0",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Мачка",
+              "language": "sr"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$7C4E2F5B-6DCC-4F46-BCD9-0DB4DB0C0801",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Likati",
+              "language": "ss"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$6B715B7D-D18A-47AE-B45E-9F31C1CC71B0",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Tamkatt",
+              "language": "sv"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$E3F58739-1967-44D9-874C-06AC85E1D5F9",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "பூனை",
+              "language": "ta"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$1610262D-4A2D-45D7-A0CB-D8E870BE2012",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "แมว",
+              "language": "th"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$223DFC6A-80B4-495D-A5B0-0145138C3204",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Pusi",
+              "language": "to"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$22D20BE7-2BC0-4C5E-87ED-E665F26F4C2A",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Kedi",
+              "language": "tr"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$112E82E6-3762-48BA-A12D-C819BA61BA48",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "Кіт свійський",
+              "language": "uk"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$834E36D2-6E2B-4D93-A4FD-99E5C951C345",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "gat",
+              "language": "vec"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$E176FC04-62E1-4A2B-88A5-1F411CAFFBD1",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "mèo",
+              "language": "vi"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$AC4D9348-5F06-4583-94BE-A9BB5986C808",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1843",
+          "datavalue": {
+            "value": {
+              "text": "猫",
+              "language": "zh"
+            },
+            "type": "monolingualtext"
+          },
+          "datatype": "monolingualtext"
+        },
+        "type": "statement",
+        "id": "Q146$5526D81B-C280-4C2E-87EE-EA220FEF89DB",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2e0c13df5b13edc9b3db9d8129e466c0894710ac",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 13679,
+                      "id": "Q13679"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ],
+    "P3395": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3395",
+          "datavalue": {
+            "value": {
+              "amount": "+125",
+              "unit": "http://www.wikidata.org/entity/Q743895",
+              "upperBound": "+140",
+              "lowerBound": "+110"
+            },
+            "type": "quantity"
+          },
+          "datatype": "quantity"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P518": [
+            {
+              "snaktype": "value",
+              "property": "P518",
+              "hash": "7b6cd221ab77c0f671762d80270491d429e8dd35",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 20980706,
+                  "id": "Q20980706"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P518"
+        ],
+        "id": "Q146$11e44413-4fbd-44c2-b3b8-910ab9871a47",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "cbf082066e77ab9a31dbb33f426182cbfb43b678",
+            "snaks": {
+              "P854": [
+                {
+                  "snaktype": "value",
+                  "property": "P854",
+                  "datavalue": {
+                    "value": "http://www.cliniqueveterinairecalvisson.com/article-veterinaire-27-4-donnees-physiologiques-sur-le-chat",
+                    "type": "string"
+                  },
+                  "datatype": "url"
+                }
+              ],
+              "P1476": [
+                {
+                  "snaktype": "value",
+                  "property": "P1476",
+                  "datavalue": {
+                    "value": {
+                      "text": "Données physiologiques sur le chat",
+                      "language": "fr"
+                    },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                }
+              ],
+              "P813": [
+                {
+                  "snaktype": "value",
+                  "property": "P813",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2016-12-23T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P854",
+              "P1476",
+              "P813"
+            ]
+          }
+        ]
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3395",
+          "datavalue": {
+            "value": {
+              "amount": "+130",
+              "unit": "http://www.wikidata.org/entity/Q743895",
+              "upperBound": "+140",
+              "lowerBound": "+120"
+            },
+            "type": "quantity"
+          },
+          "datatype": "quantity"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P518": [
+            {
+              "snaktype": "value",
+              "property": "P518",
+              "hash": "7b6cd221ab77c0f671762d80270491d429e8dd35",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 20980706,
+                  "id": "Q20980706"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P518"
+        ],
+        "id": "Q146$6f01c585-43db-3886-a520-0cf9367f70e1",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "655f922cb574f5102cb45338fbd0cb32cc5e84b7",
+            "snaks": {
+              "P248": [
+                {
+                  "snaktype": "value",
+                  "property": "P248",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 28053140,
+                      "id": "Q28053140"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ],
+              "P813": [
+                {
+                  "snaktype": "value",
+                  "property": "P813",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2016-12-23T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P248",
+              "P813"
+            ]
+          }
+        ]
+      }
+    ],
+    "P3417": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3417",
+          "datavalue": {
+            "value": "Cats",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$CB3D0652-C5DA-4B5A-8442-15477B236917",
+        "rank": "normal"
+      }
+    ],
+    "P3485": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3485",
+          "datavalue": {
+            "value": {
+              "amount": "+58",
+              "unit": "1",
+              "upperBound": "+58",
+              "lowerBound": "+58"
+            },
+            "type": "quantity"
+          },
+          "datatype": "quantity"
+        },
+        "type": "statement",
+        "id": "Q146$9B873AED-0428-48EB-974A-A51655B75FAD",
+        "rank": "normal"
+      }
+    ],
+    "P3387": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3387",
+          "datavalue": {
+            "value": {
+              "amount": "+45",
+              "unit": "http://www.wikidata.org/entity/Q39369"
+            },
+            "type": "quantity"
+          },
+          "datatype": "quantity"
+        },
+        "type": "statement",
+        "id": "Q146$54adffa4-42fb-cb14-de99-417aaf15c725",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "a4068040fd646e09715308d151dc99224ec80f05",
+            "snaks": {
+              "P248": [
+                {
+                  "snaktype": "value",
+                  "property": "P248",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 28537348,
+                      "id": "Q28537348"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ],
+              "P813": [
+                {
+                  "snaktype": "value",
+                  "property": "P813",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2017-01-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P248",
+              "P813"
+            ]
+          }
+        ]
+      }
+    ],
+    "P3465": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3465",
+          "datavalue": {
+            "value": {
+              "amount": "+64000",
+              "unit": "http://www.wikidata.org/entity/Q39369"
+            },
+            "type": "quantity"
+          },
+          "datatype": "quantity"
+        },
+        "type": "statement",
+        "id": "Q146$19790ad7-4857-e422-3fcd-2108f6d8ab3c",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "a4068040fd646e09715308d151dc99224ec80f05",
+            "snaks": {
+              "P248": [
+                {
+                  "snaktype": "value",
+                  "property": "P248",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 28537348,
+                      "id": "Q28537348"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ],
+              "P813": [
+                {
+                  "snaktype": "value",
+                  "property": "P813",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2017-01-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P248",
+              "P813"
+            ]
+          }
+        ]
+      }
+    ],
+    "P3827": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P3827",
+          "datavalue": {
+            "value": "cats",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$D17AC781-C5FD-4C4D-8620-9E9F04D2609E",
+        "rank": "normal"
+      }
+    ],
+    "P972": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P972",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 5460604,
+              "id": "Q5460604"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$9789087F-90C2-4B0F-AFE4-445D85FC8FDA",
+        "rank": "normal"
+      }
+    ],
+    "P279": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P279",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 622852,
+              "id": "Q622852"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "qualifiers": {
+          "P580": [
+            {
+              "snaktype": "value",
+              "property": "P580",
+              "hash": "ee3eb787cdc3196ddece72bb515ba7c720317987",
+              "datavalue": {
+                "value": {
+                  "time": "-9000-00-00T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 6,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985786"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            }
+          ],
+          "P1480": [
+            {
+              "snaktype": "value",
+              "property": "P1480",
+              "hash": "cb40f2027a88b8d23735681aaccba1069a574f54",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 5727902,
+                  "id": "Q5727902"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ],
+          "P3005": [
+            {
+              "snaktype": "value",
+              "property": "P3005",
+              "hash": "5dcef3168b1c9cbc98e74c84cda596c35d005b74",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 170526,
+                  "id": "Q170526"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P580",
+          "P1480",
+          "P3005"
+        ],
+        "id": "Q146$77588ba6-4862-0209-7ac7-2c11b7157525",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "237031c800a87c785697773f602657e7ea3ff0af",
+            "snaks": {
+              "P356": [
+                {
+                  "snaktype": "value",
+                  "property": "P356",
+                  "datavalue": {
+                    "value": "10.1016/j.ygeno.2007.10.009",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P356"
+            ]
+          }
+        ]
+      }
+    ],
+    "P4024": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P4024",
+          "datavalue": {
+            "value": "Felis_silvestris_catus",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$3C75E331-1D2D-4184-AC90-439007E571B9",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "d4bd87b862b12d99d26e86472d44f26858dee639",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 8447,
+                      "id": "Q8447"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ],
+    "P1552": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1552",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 3454738,
+              "id": "Q3454738"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$729c2d48-4723-e30f-41ce-29e9d4bf8533",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1552",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 170430,
+              "id": "Q170430"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$d932ab1a-403a-0f3f-9d9d-51d6c3d95ea2",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1552",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 662750,
+              "id": "Q662750"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$5b143cd6-4089-c761-0680-16a8fc2a29cb",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1552",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 14404836,
+              "id": "Q14404836"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q146$c2f69eb4-4fb4-d4ca-1527-168be5d16edb",
+        "rank": "normal"
+      }
+    ],
+    "P1225": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1225",
+          "datavalue": {
+            "value": "10647397",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$53FB406D-0395-40B9-9042-F041064278AB",
+        "rank": "normal"
+      }
+    ],
+    "P902": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P902",
+          "datavalue": {
+            "value": "41559",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$9AE15837-F751-4846-BCCF-3F81730513F4",
+        "rank": "normal"
+      }
+    ],
+    "P2581": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P2581",
+          "datavalue": {
+            "value": "00016606n",
+            "type": "string"
+          },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q146$77188611-F720-4F85-82CE-07860BDB359E",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "bd0ee81488cd8c23d4b655e417aac78dca370283",
+            "snaks": {
+              "P143": [
+                {
+                  "snaktype": "value",
+                  "property": "P143",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 4837690,
+                      "id": "Q4837690"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P143"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sitelinks": {
+    "dewiki": {
+      "site": "dewiki",
+      "title": "Hauskatze",
+      "badges": []
+    },
+    "arwiki": {
+      "site": "arwiki",
+      "title": "قط",
+      "badges": []
+    },
+    "ptwiki": {
+      "site": "ptwiki",
+      "title": "Gato",
+      "badges": []
+    },
+    "fiwiki": {
+      "site": "fiwiki",
+      "title": "Kissa",
+      "badges": []
+    },
+    "simplewiki": {
+      "site": "simplewiki",
+      "title": "Cat",
+      "badges": []
+    },
+    "zhwiki": {
+      "site": "zhwiki",
+      "title": "猫",
+      "badges": []
+    },
+    "jawiki": {
+      "site": "jawiki",
+      "title": "ネコ",
+      "badges": []
+    },
+    "itwiki": {
+      "site": "itwiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "svwiki": {
+      "site": "svwiki",
+      "title": "Katt",
+      "badges": []
+    },
+    "szlwiki": {
+      "site": "szlwiki",
+      "title": "Kot",
+      "badges": []
+    },
+    "euwiki": {
+      "site": "euwiki",
+      "title": "Katu",
+      "badges": []
+    },
+    "plwiki": {
+      "site": "plwiki",
+      "title": "Kot domowy",
+      "badges": []
+    },
+    "bswiki": {
+      "site": "bswiki",
+      "title": "Mačka",
+      "badges": []
+    },
+    "angwiki": {
+      "site": "angwiki",
+      "title": "Catte",
+      "badges": []
+    },
+    "uzwiki": {
+      "site": "uzwiki",
+      "title": "Mushuk",
+      "badges": []
+    },
+    "stwiki": {
+      "site": "stwiki",
+      "title": "Katse",
+      "badges": []
+    },
+    "ocwiki": {
+      "site": "ocwiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "srnwiki": {
+      "site": "srnwiki",
+      "title": "Puspusi",
+      "badges": []
+    },
+    "swwiki": {
+      "site": "swwiki",
+      "title": "Paka-kaya",
+      "badges": []
+    },
+    "sqwiki": {
+      "site": "sqwiki",
+      "title": "Macja",
+      "badges": []
+    },
+    "cdowiki": {
+      "site": "cdowiki",
+      "title": "Mà",
+      "badges": []
+    },
+    "nsowiki": {
+      "site": "nsowiki",
+      "title": "Katse",
+      "badges": []
+    },
+    "mtwiki": {
+      "site": "mtwiki",
+      "title": "Qattus",
+      "badges": []
+    },
+    "amwiki": {
+      "site": "amwiki",
+      "title": "ድመት",
+      "badges": []
+    },
+    "gawiki": {
+      "site": "gawiki",
+      "title": "Cat",
+      "badges": []
+    },
+    "nlwiki": {
+      "site": "nlwiki",
+      "title": "Kat (dier)",
+      "badges": []
+    },
+    "yiwiki": {
+      "site": "yiwiki",
+      "title": "קאץ",
+      "badges": []
+    },
+    "nrmwiki": {
+      "site": "nrmwiki",
+      "title": "Cat",
+      "badges": []
+    },
+    "ckbwiki": {
+      "site": "ckbwiki",
+      "title": "پشیلە",
+      "badges": []
+    },
+    "ukwiki": {
+      "site": "ukwiki",
+      "title": "Кіт свійський",
+      "badges": []
+    },
+    "jbowiki": {
+      "site": "jbowiki",
+      "title": "mlatu",
+      "badges": []
+    },
+    "be_x_oldwiki": {
+      "site": "be_x_oldwiki",
+      "title": "Кот",
+      "badges": []
+    },
+    "ganwiki": {
+      "site": "ganwiki",
+      "title": "貓",
+      "badges": []
+    },
+    "pawiki": {
+      "site": "pawiki",
+      "title": "ਬਿੱਲੀ",
+      "badges": []
+    },
+    "frpwiki": {
+      "site": "frpwiki",
+      "title": "Chat",
+      "badges": []
+    },
+    "sahwiki": {
+      "site": "sahwiki",
+      "title": "Куоска",
+      "badges": []
+    },
+    "ruewiki": {
+      "site": "ruewiki",
+      "title": "Мачка",
+      "badges": []
+    },
+    "scowiki": {
+      "site": "scowiki",
+      "title": "Cat",
+      "badges": []
+    },
+    "kvwiki": {
+      "site": "kvwiki",
+      "title": "Кань",
+      "badges": []
+    },
+    "newiki": {
+      "site": "newiki",
+      "title": "बिरालो",
+      "badges": []
+    },
+    "azwiki": {
+      "site": "azwiki",
+      "title": "Ev pişiyi",
+      "badges": []
+    },
+    "bmwiki": {
+      "site": "bmwiki",
+      "title": "Jakuma",
+      "badges": []
+    },
+    "hrwiki": {
+      "site": "hrwiki",
+      "title": "Domaća mačka",
+      "badges": []
+    },
+    "lmowiki": {
+      "site": "lmowiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "furwiki": {
+      "site": "furwiki",
+      "title": "Gjat",
+      "badges": []
+    },
+    "csbwiki": {
+      "site": "csbwiki",
+      "title": "Kòt",
+      "badges": []
+    },
+    "dawiki": {
+      "site": "dawiki",
+      "title": "Kat",
+      "badges": []
+    },
+    "vecwiki": {
+      "site": "vecwiki",
+      "title": "Gato",
+      "badges": []
+    },
+    "pmswiki": {
+      "site": "pmswiki",
+      "title": "Gat",
+      "badges": []
+    },
+    "alswiki": {
+      "site": "alswiki",
+      "title": "Hauskatze",
+      "badges": []
+    },
+    "lezwiki": {
+      "site": "lezwiki",
+      "title": "Кац",
+      "badges": []
+    },
+    "udmwiki": {
+      "site": "udmwiki",
+      "title": "Коӵыш",
+      "badges": []
+    },
+    "bewiki": {
+      "site": "bewiki",
+      "title": "Кот свойскі",
+      "badges": []
+    },
+    "hewiki": {
+      "site": "hewiki",
+      "title": "חתול הבית",
+      "badges": []
+    },
+    "ladwiki": {
+      "site": "ladwiki",
+      "title": "Gato",
+      "badges": []
+    },
+    "yowiki": {
+      "site": "yowiki",
+      "title": "Ológbò",
+      "badges": []
+    },
+    "mdfwiki": {
+      "site": "mdfwiki",
+      "title": "Ката",
+      "badges": []
+    },
+    "aywiki": {
+      "site": "aywiki",
+      "title": "Phisi",
+      "badges": []
+    },
+    "viwiki": {
+      "site": "viwiki",
+      "title": "Mèo",
+      "badges": []
+    },
+    "scwiki": {
+      "site": "scwiki",
+      "title": "Felis",
+      "badges": []
+    },
+    "zh_yuewiki": {
+      "site": "zh_yuewiki",
+      "title": "貓",
+      "badges": []
+    },
+    "wowiki": {
+      "site": "wowiki",
+      "title": "Muus",
+      "badges": []
+    },
+    "hsbwiki": {
+      "site": "hsbwiki",
+      "title": "Domjaca kóčka",
+      "badges": []
+    },
+    "htwiki": {
+      "site": "htwiki",
+      "title": "Chat",
+      "badges": []
+    },
+    "gnwiki": {
+      "site": "gnwiki",
+      "title": "Mbarakaja",
+      "badges": []
+    },
+    "zh_classicalwiki": {
+      "site": "zh_classicalwiki",
+      "title": "貓",
+      "badges": []
+    },
+    "tgwiki": {
+      "site": "tgwiki",
+      "title": "Гурба",
+      "badges": []
+    },
+    "kuwiki": {
+      "site": "kuwiki",
+      "title": "Pisîk",
+      "badges": []
+    },
+    "extwiki": {
+      "site": "extwiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "mnwiki": {
+      "site": "mnwiki",
+      "title": "Муур",
+      "badges": []
+    },
+    "nowiki": {
+      "site": "nowiki",
+      "title": "Tamkatt",
+      "badges": []
+    },
+    "fowiki": {
+      "site": "fowiki",
+      "title": "Kettur",
+      "badges": []
+    },
+    "cywiki": {
+      "site": "cywiki",
+      "title": "Cath",
+      "badges": []
+    },
+    "cswiki": {
+      "site": "cswiki",
+      "title": "Kočka domácí",
+      "badges": []
+    },
+    "bat_smgwiki": {
+      "site": "bat_smgwiki",
+      "title": "Katie",
+      "badges": []
+    },
+    "oswiki": {
+      "site": "oswiki",
+      "title": "Гæды",
+      "badges": []
+    },
+    "mrwiki": {
+      "site": "mrwiki",
+      "title": "मांजर",
+      "badges": []
+    },
+    "bgwiki": {
+      "site": "bgwiki",
+      "title": "Котка",
+      "badges": []
+    },
+    "arcwiki": {
+      "site": "arcwiki",
+      "title": "ܩܛܐ",
+      "badges": []
+    },
+    "tewiki": {
+      "site": "tewiki",
+      "title": "పిల్లి",
+      "badges": []
+    },
+    "urwiki": {
+      "site": "urwiki",
+      "title": "بلی",
+      "badges": []
+    },
+    "kmwiki": {
+      "site": "kmwiki",
+      "title": "ឆ្មា",
+      "badges": []
+    },
+    "zuwiki": {
+      "site": "zuwiki",
+      "title": "Ikati",
+      "badges": []
+    },
+    "gvwiki": {
+      "site": "gvwiki",
+      "title": "Kayt",
+      "badges": []
+    },
+    "lbwiki": {
+      "site": "lbwiki",
+      "title": "Hauskaz",
+      "badges": []
+    },
+    "jvwiki": {
+      "site": "jvwiki",
+      "title": "Kucing",
+      "badges": []
+    },
+    "bowiki": {
+      "site": "bowiki",
+      "title": "ཞི་མི།",
+      "badges": []
+    },
+    "quwiki": {
+      "site": "quwiki",
+      "title": "Michi",
+      "badges": []
+    },
+    "gdwiki": {
+      "site": "gdwiki",
+      "title": "Cat",
+      "badges": []
+    },
+    "hawwiki": {
+      "site": "hawwiki",
+      "title": "Pōpoki",
+      "badges": []
+    },
+    "tawiki": {
+      "site": "tawiki",
+      "title": "பூனை",
+      "badges": []
+    },
+    "ltgwiki": {
+      "site": "ltgwiki",
+      "title": "Kačs",
+      "badges": []
+    },
+    "cebwiki": {
+      "site": "cebwiki",
+      "title": "Iring",
+      "badges": []
+    },
+    "cewiki": {
+      "site": "cewiki",
+      "title": "Цициг",
+      "badges": []
+    },
+    "towiki": {
+      "site": "towiki",
+      "title": "Pusi",
+      "badges": []
+    },
+    "etwiki": {
+      "site": "etwiki",
+      "title": "Kass",
+      "badges": []
+    },
+    "bnwiki": {
+      "site": "bnwiki",
+      "title": "বিড়াল",
+      "badges": []
+    },
+    "chrwiki": {
+      "site": "chrwiki",
+      "title": "ᏪᏌ",
+      "badges": []
+    },
+    "brwiki": {
+      "site": "brwiki",
+      "title": "Kazh",
+      "badges": []
+    },
+    "rwwiki": {
+      "site": "rwwiki",
+      "title": "Injangwe",
+      "badges": []
+    },
+    "nawiki": {
+      "site": "nawiki",
+      "title": "Butsi",
+      "badges": []
+    },
+    "bclwiki": {
+      "site": "bclwiki",
+      "title": "Ikos",
+      "badges": []
+    },
+    "sswiki": {
+      "site": "sswiki",
+      "title": "Likati",
+      "badges": []
+    },
+    "bawiki": {
+      "site": "bawiki",
+      "title": "Бесәй",
+      "badges": []
+    },
+    "pnbwiki": {
+      "site": "pnbwiki",
+      "title": "بلی",
+      "badges": []
+    },
+    "iswiki": {
+      "site": "iswiki",
+      "title": "Köttur",
+      "badges": []
+    },
+    "xalwiki": {
+      "site": "xalwiki",
+      "title": "Мис",
+      "badges": []
+    },
+    "astwiki": {
+      "site": "astwiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "trwiki": {
+      "site": "trwiki",
+      "title": "Kedi",
+      "badges": []
+    },
+    "snwiki": {
+      "site": "snwiki",
+      "title": "Katsi",
+      "badges": []
+    },
+    "sewiki": {
+      "site": "sewiki",
+      "title": "Bussá",
+      "badges": []
+    },
+    "mkwiki": {
+      "site": "mkwiki",
+      "title": "Мачка",
+      "badges": []
+    },
+    "hakwiki": {
+      "site": "hakwiki",
+      "title": "Meu-é",
+      "badges": []
+    },
+    "stqwiki": {
+      "site": "stqwiki",
+      "title": "Kat",
+      "badges": []
+    },
+    "myvwiki": {
+      "site": "myvwiki",
+      "title": "Катка",
+      "badges": []
+    },
+    "siwiki": {
+      "site": "siwiki",
+      "title": "බළලා",
+      "badges": []
+    },
+    "nnwiki": {
+      "site": "nnwiki",
+      "title": "Katt",
+      "badges": []
+    },
+    "iowiki": {
+      "site": "iowiki",
+      "title": "Kato",
+      "badges": []
+    },
+    "mznwiki": {
+      "site": "mznwiki",
+      "title": "بامشی",
+      "badges": []
+    },
+    "lnwiki": {
+      "site": "lnwiki",
+      "title": "Nkɔ́ndɔkɔ́",
+      "badges": []
+    },
+    "tlwiki": {
+      "site": "tlwiki",
+      "title": "Pusa",
+      "badges": []
+    },
+    "nvwiki": {
+      "site": "nvwiki",
+      "title": "Mósí",
+      "badges": []
+    },
+    "kkwiki": {
+      "site": "kkwiki",
+      "title": "Мысық",
+      "badges": []
+    },
+    "zh_min_nanwiki": {
+      "site": "zh_min_nanwiki",
+      "title": "Niau",
+      "badges": []
+    },
+    "pamwiki": {
+      "site": "pamwiki",
+      "title": "Pusa",
+      "badges": []
+    },
+    "wawiki": {
+      "site": "wawiki",
+      "title": "Tchet",
+      "badges": []
+    },
+    "hawiki": {
+      "site": "hawiki",
+      "title": "Kyanwa",
+      "badges": []
+    },
+    "sowiki": {
+      "site": "sowiki",
+      "title": "Yaanyuur",
+      "badges": []
+    },
+    "kowiki": {
+      "site": "kowiki",
+      "title": "고양이",
+      "badges": []
+    },
+    "ugwiki": {
+      "site": "ugwiki",
+      "title": "مۈشۈك",
+      "badges": []
+    },
+    "kswiki": {
+      "site": "kswiki",
+      "title": "بیٲر",
+      "badges": []
+    },
+    "avwiki": {
+      "site": "avwiki",
+      "title": "Кето",
+      "badges": []
+    },
+    "lbewiki": {
+      "site": "lbewiki",
+      "title": "Ччиту",
+      "badges": []
+    },
+    "bugwiki": {
+      "site": "bugwiki",
+      "title": "Meong",
+      "badges": []
+    },
+    "emlwiki": {
+      "site": "emlwiki",
+      "title": "Gàt",
+      "badges": []
+    },
+    "lvwiki": {
+      "site": "lvwiki",
+      "title": "Kaķis",
+      "badges": []
+    },
+    "glwiki": {
+      "site": "glwiki",
+      "title": "Gato",
+      "badges": []
+    },
+    "shwiki": {
+      "site": "shwiki",
+      "title": "Mačka",
+      "badges": []
+    },
+    "koiwiki": {
+      "site": "koiwiki",
+      "title": "Кань",
+      "badges": []
+    },
+    "scnwiki": {
+      "site": "scnwiki",
+      "title": "Jattu",
+      "badges": []
+    },
+    "cuwiki": {
+      "site": "cuwiki",
+      "title": "Котъ",
+      "badges": []
+    },
+    "hiwiki": {
+      "site": "hiwiki",
+      "title": "बिल्ली",
+      "badges": []
+    },
+    "sdwiki": {
+      "site": "sdwiki",
+      "title": "ٻلي",
+      "badges": []
+    },
+    "knwiki": {
+      "site": "knwiki",
+      "title": "ಬೆಕ್ಕು",
+      "badges": []
+    },
+    "cvwiki": {
+      "site": "cvwiki",
+      "title": "Кушак",
+      "badges": []
+    },
+    "fywiki": {
+      "site": "fywiki",
+      "title": "Kat",
+      "badges": []
+    },
+    "rowiki": {
+      "site": "rowiki",
+      "title": "Pisică de casă",
+      "badges": []
+    },
+    "nds_nlwiki": {
+      "site": "nds_nlwiki",
+      "title": "Kat",
+      "badges": []
+    },
+    "cowiki": {
+      "site": "cowiki",
+      "title": "Ghjattu",
+      "badges": []
+    },
+    "vepwiki": {
+      "site": "vepwiki",
+      "title": "Kaži",
+      "badges": []
+    },
+    "ilowiki": {
+      "site": "ilowiki",
+      "title": "Pusa",
+      "badges": []
+    },
+    "mgwiki": {
+      "site": "mgwiki",
+      "title": "Saka",
+      "badges": []
+    },
+    "slwiki": {
+      "site": "slwiki",
+      "title": "Domača mačka",
+      "badges": []
+    },
+    "warwiki": {
+      "site": "warwiki",
+      "title": "Misay",
+      "badges": []
+    },
+    "mhrwiki": {
+      "site": "mhrwiki",
+      "title": "Пырыс",
+      "badges": []
+    },
+    "fawiki": {
+      "site": "fawiki",
+      "title": "گربه",
+      "badges": []
+    },
+    "kawiki": {
+      "site": "kawiki",
+      "title": "შინაური კატა",
+      "badges": []
+    },
+    "pcdwiki": {
+      "site": "pcdwiki",
+      "title": "Cot",
+      "badges": []
+    },
+    "dsbwiki": {
+      "site": "dsbwiki",
+      "title": "Domacna kócka",
+      "badges": []
+    },
+    "ndswiki": {
+      "site": "ndswiki",
+      "title": "Katt",
+      "badges": []
+    },
+    "fiu_vrowiki": {
+      "site": "fiu_vrowiki",
+      "title": "Kass",
+      "badges": []
+    },
+    "hifwiki": {
+      "site": "hifwiki",
+      "title": "Pusi",
+      "badges": []
+    },
+    "ttwiki": {
+      "site": "ttwiki",
+      "title": "Мәче",
+      "badges": []
+    },
+    "newwiki": {
+      "site": "newwiki",
+      "title": "भौ",
+      "badges": []
+    },
+    "pswiki": {
+      "site": "pswiki",
+      "title": "پيشو",
+      "badges": []
+    },
+    "sawiki": {
+      "site": "sawiki",
+      "title": "मार्जालः",
+      "badges": []
+    },
+    "diqwiki": {
+      "site": "diqwiki",
+      "title": "Pısıng",
+      "badges": []
+    },
+    "mywiki": {
+      "site": "mywiki",
+      "title": "ကြောင် (တိရစ္ဆာန်)",
+      "badges": []
+    },
+    "suwiki": {
+      "site": "suwiki",
+      "title": "Ucing",
+      "badges": []
+    },
+    "vlswiki": {
+      "site": "vlswiki",
+      "title": "Katte",
+      "badges": []
+    },
+    "lowiki": {
+      "site": "lowiki",
+      "title": "ແມວ",
+      "badges": []
+    },
+    "commonswiki": {
+      "site": "commonswiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "novwiki": {
+      "site": "novwiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "kgwiki": {
+      "site": "kgwiki",
+      "title": "Nyawu",
+      "badges": []
+    },
+    "mwlwiki": {
+      "site": "mwlwiki",
+      "title": "Gato",
+      "badges": []
+    },
+    "bxrwiki": {
+      "site": "bxrwiki",
+      "title": "Миисгэй",
+      "badges": []
+    },
+    "plwikiquote": {
+      "site": "plwikiquote",
+      "title": "Kot",
+      "badges": []
+    },
+    "bswikiquote": {
+      "site": "bswikiquote",
+      "title": "Mačka",
+      "badges": []
+    },
+    "srwikiquote": {
+      "site": "srwikiquote",
+      "title": "Mačka",
+      "badges": []
+    },
+    "dewikiquote": {
+      "site": "dewikiquote",
+      "title": "Katze",
+      "badges": []
+    },
+    "frwikiquote": {
+      "site": "frwikiquote",
+      "title": "Chat",
+      "badges": []
+    },
+    "cawikiquote": {
+      "site": "cawikiquote",
+      "title": "Gat",
+      "badges": []
+    },
+    "itwikiquote": {
+      "site": "itwikiquote",
+      "title": "Gatto",
+      "badges": []
+    },
+    "eswikiquote": {
+      "site": "eswikiquote",
+      "title": "Gato",
+      "badges": []
+    },
+    "slwikiquote": {
+      "site": "slwikiquote",
+      "title": "Mačka",
+      "badges": []
+    },
+    "hrwikiquote": {
+      "site": "hrwikiquote",
+      "title": "Mačke",
+      "badges": []
+    },
+    "ruwikiquote": {
+      "site": "ruwikiquote",
+      "title": "Кошка",
+      "badges": []
+    },
+    "ltwikiquote": {
+      "site": "ltwikiquote",
+      "title": "Katė",
+      "badges": []
+    },
+    "mlwikiquote": {
+      "site": "mlwikiquote",
+      "title": "പൂച്ച",
+      "badges": []
+    },
+    "huwikiquote": {
+      "site": "huwikiquote",
+      "title": "Macska",
+      "badges": []
+    },
+    "skwikiquote": {
+      "site": "skwikiquote",
+      "title": "Mačka",
+      "badges": []
+    },
+    "jawikiquote": {
+      "site": "jawikiquote",
+      "title": "猫",
+      "badges": []
+    },
+    "ptwikiquote": {
+      "site": "ptwikiquote",
+      "title": "Gato",
+      "badges": []
+    },
+    "enwikiquote": {
+      "site": "enwikiquote",
+      "title": "Cats",
+      "badges": []
+    },
+    "fawikiquote": {
+      "site": "fawikiquote",
+      "title": "گربه",
+      "badges": []
+    },
+    "cswikiquote": {
+      "site": "cswikiquote",
+      "title": "Kočka",
+      "badges": []
+    },
+    "urwikiquote": {
+      "site": "urwikiquote",
+      "title": "بلی",
+      "badges": []
+    },
+    "lijwiki": {
+      "site": "lijwiki",
+      "title": "Felis sylvestris catus",
+      "badges": []
+    },
+    "xhwiki": {
+      "site": "xhwiki",
+      "title": "Ikati",
+      "badges": []
+    },
+    "ikwiki": {
+      "site": "ikwiki",
+      "title": "Kitiuraq",
+      "badges": []
+    },
+    "wuuwiki": {
+      "site": "wuuwiki",
+      "title": "貓",
+      "badges": []
+    },
+    "hywiki": {
+      "site": "hywiki",
+      "title": "Կատուներ",
+      "badges": []
+    },
+    "roa_rupwiki": {
+      "site": "roa_rupwiki",
+      "title": "Câtuși",
+      "badges": []
+    },
+    "afwiki": {
+      "site": "afwiki",
+      "title": "Kat",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "cawiki": {
+      "site": "cawiki",
+      "title": "Gat",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "elwiki": {
+      "site": "elwiki",
+      "title": "Γάτα",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "eowiki": {
+      "site": "eowiki",
+      "title": "Hejma kato",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "eswiki": {
+      "site": "eswiki",
+      "title": "Felis silvestris catus",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "huwiki": {
+      "site": "huwiki",
+      "title": "Macska",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "lawiki": {
+      "site": "lawiki",
+      "title": "Feles",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "ruwiki": {
+      "site": "ruwiki",
+      "title": "Кошка",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "skwiki": {
+      "site": "skwiki",
+      "title": "Mačka domáca",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "frwiki": {
+      "site": "frwiki",
+      "title": "Chat",
+      "badges": [
+        "Q17437798"
+      ]
+    },
+    "idwiki": {
+      "site": "idwiki",
+      "title": "Kucing",
+      "badges": [
+        "Q17437798"
+      ]
+    },
+    "ltwiki": {
+      "site": "ltwiki",
+      "title": "Katė",
+      "badges": [
+        "Q17437798"
+      ]
+    },
+    "dewikisource": {
+      "site": "dewikisource",
+      "title": "Katzen",
+      "badges": []
+    },
+    "srwiki": {
+      "site": "srwiki",
+      "title": "Мачка",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "liwiki": {
+      "site": "liwiki",
+      "title": "Hoeskat",
+      "badges": []
+    },
+    "barwiki": {
+      "site": "barwiki",
+      "title": "Hauskotz",
+      "badges": []
+    },
+    "thwikibooks": {
+      "site": "thwikibooks",
+      "title": "แมว",
+      "badges": []
+    },
+    "ltwikibooks": {
+      "site": "ltwikibooks",
+      "title": "Katė",
+      "badges": []
+    },
+    "zhwikibooks": {
+      "site": "zhwikibooks",
+      "title": "貓",
+      "badges": []
+    },
+    "ukwikiquote": {
+      "site": "ukwikiquote",
+      "title": "Кішка",
+      "badges": []
+    },
+    "zawiki": {
+      "site": "zawiki",
+      "title": "Meuz",
+      "badges": []
+    },
+    "nahwiki": {
+      "site": "nahwiki",
+      "title": "Mizton",
+      "badges": []
+    },
+    "aswiki": {
+      "site": "aswiki",
+      "title": "মেকুৰী",
+      "badges": []
+    },
+    "specieswiki": {
+      "site": "specieswiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "trwikiquote": {
+      "site": "trwikiquote",
+      "title": "Kedi",
+      "badges": []
+    },
+    "mlwiki": {
+      "site": "mlwiki",
+      "title": "പൂച്ച",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "hywikiquote": {
+      "site": "hywikiquote",
+      "title": "Կատու",
+      "badges": []
+    },
+    "eowikiquote": {
+      "site": "eowikiquote",
+      "title": "Kato",
+      "badges": []
+    },
+    "nnwikiquote": {
+      "site": "nnwikiquote",
+      "title": "Kattar",
+      "badges": []
+    },
+    "glkwiki": {
+      "site": "glkwiki",
+      "title": "پیچا",
+      "badges": []
+    },
+    "jamwiki": {
+      "site": "jamwiki",
+      "title": "Pus",
+      "badges": []
+    },
+    "tcywiki": {
+      "site": "tcywiki",
+      "title": "ಪುಚ್ಚೆ",
+      "badges": []
+    },
+    "azbwiki": {
+      "site": "azbwiki",
+      "title": "پیشیک",
+      "badges": []
+    },
+    "enwiki": {
+      "site": "enwiki",
+      "title": "Cat",
+      "badges": [
+        "Q17437798"
+      ]
+    },
+    "olowiki": {
+      "site": "olowiki",
+      "title": "Kaži",
+      "badges": []
+    },
+    "mswiki": {
+      "site": "mswiki",
+      "title": "Kucing",
+      "badges": [
+        "Q17437796"
+      ]
+    },
+    "kywiki": {
+      "site": "kywiki",
+      "title": "Бакма мышыктар",
+      "badges": []
+    },
+    "anwiki": {
+      "site": "anwiki",
+      "title": "Felis silvestris catus",
+      "badges": []
+    },
+    "thwiki": {
+      "site": "thwiki",
+      "title": "แมว",
+      "badges": []
+    },
+    "iawiki": {
+      "site": "iawiki",
+      "title": "Catto domestic",
+      "badges": []
+    },
+    "arzwiki": {
+      "site": "arzwiki",
+      "title": "بسه",
+      "badges": []
+    },
+    "kbpwiki": {
+      "site": "kbpwiki",
+      "title": "Pɩyaʊ",
+      "badges": []
+    },
+    "atjwiki": {
+      "site": "atjwiki",
+      "title": "Minoc",
+      "badges": []
+    },
+    "kabwiki": {
+      "site": "kabwiki",
+      "title": "Amcic",
+      "badges": []
+    },
+    "frrwiki": {
+      "site": "frrwiki",
+      "title": "Kaat",
+      "badges": []
+    },
+    "rmywiki": {
+      "site": "rmywiki",
+      "title": "Magodja",
+      "badges": []
+    }
+  }
+}
