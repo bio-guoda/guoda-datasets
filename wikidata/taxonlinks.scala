@@ -90,7 +90,7 @@ val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/la
 //
 // taxa chunks are json object that mention taxon qualifier https://www.wikidata.org/wiki/Q16521
 // turn into JSON Lines text format, also called newline-delimited JSON (see http://jsonlines.org/)
-val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replace(""",$""", ""))
+val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replaceFirst(""",$""", ""))
 
 import spark.implicits._
 
