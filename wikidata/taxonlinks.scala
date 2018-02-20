@@ -34,27 +34,6 @@ def taxonItemId(json: JValue) = {
   } else None
 }
 
-
-def taxonItem(json: JValue) = {
-  if (isTaxonInstance(json)) {
-    val id = (json \ "id").extract[Option[String]]
-    val rank = (json \\ "P105" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
-    val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
-    val parentId = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
-    val nameList = (json \\ "labels").children.flatMap {
-      case (obj: JValue) => obj.extractOpt[CommonName]
-      case _ => None
-    }
-
-    Some(TaxonTerm(id.getOrElse("")
-      , name.getOrElse("")
-      , rank.getOrElse("")
-      , parentId.getOrElse("")
-      , commonNames = nameList
-      , sameAsIds = idsForTaxon(json)))
-  } else None
-}
-
 def idMapForTaxon(json: JValue): Seq[(String, String)] = {
   taxonItemId(json) match {
     case Some(id) => {
@@ -85,6 +64,25 @@ def idsForTaxon(json: JValue): Seq[String] = {
   }
 }
 
+def taxonItem(json: JValue) = {
+  if (isTaxonInstance(json)) {
+    val id = (json \ "id").extract[Option[String]]
+    val rank = (json \\ "P105" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
+    val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
+    val parentId = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
+    val nameList = (json \\ "labels").children.flatMap {
+      case (obj: JValue) => obj.extractOpt[CommonName]
+      case _ => None
+    }
+
+    Some(TaxonTerm(id.getOrElse("")
+      , name.getOrElse("")
+      , rank.getOrElse("")
+      , parentId.getOrElse("")
+      , commonNames = nameList
+      , sameAsIds = idsForTaxon(json)))
+  } else None
+}
 
 val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/latest-all.json.bz2")
 
