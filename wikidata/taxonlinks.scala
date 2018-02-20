@@ -7,7 +7,7 @@ case class CommonName(value: String
 case class TaxonTerm(id: String
                      , name: String
                      , rank: String
-                     , parentId: String
+                     , parentIds: Seq[String]
                      , commonNames: Seq[CommonName]
                      , sameAsIds: Seq[String])
 
@@ -69,21 +69,20 @@ def taxonItem(json: JValue) = {
     val id = (json \ "id").extract[Option[String]]
     val rank = (json \\ "P105" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
     val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
-    val parentId = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
+    val parentIds = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[List[String]]
     val nameList = (json \\ "labels").children.flatMap {
       case (obj: JValue) => obj.extractOpt[CommonName]
       case _ => None
     }
 
-    Some(TaxonTerm(id.getOrElse("")
-      , name.getOrElse("")
-      , rank.getOrElse("")
-      , parentId.getOrElse("")
+    Some(TaxonTerm(id = id.getOrElse("")
+      , name = name.getOrElse("")
+      , rank = rank.getOrElse("")
+      , parentIds = parentIds
       , commonNames = nameList
       , sameAsIds = idsForTaxon(json)))
   } else None
 }
-
 val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/latest-all.json.bz2")
 
 // select taxa chunks and turn into individual json objects
