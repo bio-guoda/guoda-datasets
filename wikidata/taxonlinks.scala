@@ -1,6 +1,25 @@
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
+case class CommonName(value: String
+                      , language: String)
+
+case class TaxonTerm(id: String
+                     , name: String
+                     , rank: String
+                     , parentId: String
+                     , commonNames: Seq[CommonName]
+                     , sameAsIds: Seq[String])
+
+val taxonMap = Seq(("NCBI", "P685"),
+  ("ITIS", "P815"),
+  ("EOL", "P830"),
+  ("FISHBASE", "P938"),
+  ("GBIF", "P846"),
+  ("IF", "P1391"),
+  ("INAT_TAXON", "P41964"),
+  ("WORMS", "P850"))
+
 @transient
 lazy implicit val formats = DefaultFormats
 
@@ -15,22 +34,49 @@ def taxonItemId(json: JValue) = {
   } else None
 }
 
+
+def taxonItem(json: JValue) = {
+  if (isTaxonInstance(json)) {
+    val id = (json \ "id").extract[Option[String]]
+    val rank = (json \\ "P105" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
+    val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
+    val parentId = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id").extract[Option[String]]
+    val nameList = (json \\ "labels").children.flatMap {
+      case (obj: JValue) => obj.extractOpt[CommonName]
+      case _ => None
+    }
+
+    Some(TaxonTerm(id.getOrElse("")
+      , name.getOrElse("")
+      , rank.getOrElse("")
+      , parentId.getOrElse("")
+      , commonNames = nameList
+      , sameAsIds = idsForTaxon(json)))
+  } else None
+}
+
 def idMapForTaxon(json: JValue): Seq[(String, String)] = {
   taxonItemId(json) match {
     case Some(id) => {
-      val taxonMap = Seq(("NCBI", "P685"),
-        ("ITIS", "P815"),
-        ("EOL","P830"),
-        ("FISHBASE","P938"),
-        ("GBIF", "P846"),
-        ("IF", "P1391"),
-        ("INAT_TAXON", "P41964"),
-        ("WORMS", "P850"))
-
-      taxonMap.flatMap(entry =>  {
+      taxonMap.flatMap(entry => {
         (json \ "claims" \ entry._2 \\ "mainsnak" \ "datavalue" \ "value").extract[Option[String]] match {
           case Some(externalId) =>
             Some((s"$id", s"${entry._1}:$externalId"))
+          case None => None
+        }
+      })
+    }
+    case None => Seq()
+  }
+}
+
+def idsForTaxon(json: JValue): Seq[String] = {
+  taxonItemId(json) match {
+    case Some(id) => {
+      taxonMap.flatMap(entry => {
+        (json \ "claims" \ entry._2 \\ "mainsnak" \ "datavalue" \ "value").extract[Option[String]] match {
+          case Some(externalId) =>
+            Some(s"${entry._1}:$externalId")
           case None => None
         }
       })
