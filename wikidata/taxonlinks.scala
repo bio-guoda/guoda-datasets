@@ -104,6 +104,8 @@ taxonLinks.take(10)
 // write all to parquet file for fast subsequent processing
 //taxonLinks.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
 
+val taxonInfo = taxaJsonString.flatMap(line => taxonItem(parse(line)))
 
+taxonInfo.take(10)
 
 
