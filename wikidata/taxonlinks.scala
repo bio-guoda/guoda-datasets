@@ -8,7 +8,6 @@ case class TaxonTerm(id: String
                      , name: String
                      , rank: String
                      , parentIds: Seq[String]
-                     , commonNames: Seq[String]
                      , sameAsIds: Seq[String])
 
 val taxonMap = Seq(("NCBI", "P685"),
@@ -71,15 +70,11 @@ def taxonItem(json: JValue) = {
     val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
     val parentIdsSelector = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id")
     val parentIds = if (parentIdsSelector.isInstanceOf[JArray]) parentIdsSelector.extract[List[String]] else List(parentIdsSelector.extract[Option[String]]).flatten
-    val nameList = (json \\ "labels").children
-      .flatMap(value => value.extractOpt[CommonName])
-      .map(commonName => s"${commonName.value} @${commonName.language}")
 
     Some(TaxonTerm(id = id.getOrElse("")
       , name = name.getOrElse("")
       , rank = rank.getOrElse("")
       , parentIds = parentIds
-      , commonNames = nameList
       , sameAsIds = idsForTaxon(json)))
   } else None
 }
@@ -102,8 +97,6 @@ taxonLinks.take(10)
 
 // write all to parquet file for fast subsequent processing
 //taxonLinks.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
-
-taxaJsonString.take(1).foreach(println)
 
 val taxonInfo = taxaJsonString.flatMap(line => taxonItem(parse(line)))
 
