@@ -125,4 +125,6 @@ val duplicateParentIds = taxonInfo.as[TaxonTerm].map(x => (x.parentIds.length, x
 
 duplicateParentIds.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/duplicateParentIds.csv")
 
-coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/sameAsIdsStats.csv")
+val sameAsIdStats = taxonInfo.as[TaxonTerm].map(x => (x.sameAsIds.length, 1)).rdd.reduceByKey(_ + _).toDS
+
+sameAsIdStats.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/sameAsIdsStats.csv")
