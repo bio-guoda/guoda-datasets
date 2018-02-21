@@ -75,7 +75,6 @@ def taxonItem(json: JValue) = {
       .flatMap(value => value.extractOpt[CommonName])
       .map(commonName => s"${commonName.value} @${commonName.language}")
 
-
     Some(TaxonTerm(id = id.getOrElse("")
       , name = name.getOrElse("")
       , rank = rank.getOrElse("")
