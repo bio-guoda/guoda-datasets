@@ -5,7 +5,7 @@ case class CommonName(language: String
                       , value: String)
 
 case class TaxonTerm(id: String
-                     , name: String
+                     , names: Seq[String]
                      , rankIds: Seq[String]
                      , parentIds: Seq[String]
                      , sameAsIds: Seq[String])
@@ -72,11 +72,11 @@ def taxonItem(json: JValue) = {
   if (isTaxonInstance(json)) {
     val id = (json \ "id").extract[Option[String]]
     val rankIds = extractList(json \\ "P105" \ "mainsnak" \ "datavalue" \ "value" \ "id")
-    val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
+    val names = extractList(json \\ "P225" \ "mainsnak" \ "datavalue" \ "value")
     val parentIds = extractList(json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id")
 
     Some(TaxonTerm(id = id.getOrElse("")
-      , name = name.getOrElse("")
+      , names = names
       , rankIds = rankIds
       , parentIds = parentIds
       , sameAsIds = idsForTaxon(json)))
