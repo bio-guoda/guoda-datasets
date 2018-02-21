@@ -8,7 +8,7 @@ case class TaxonTerm(id: String
                      , name: String
                      , rank: String
                      , parentIds: Seq[String]
-                     , commonNames: Seq[CommonName]
+                     , commonNames: Seq[String]
                      , sameAsIds: Seq[String])
 
 val taxonMap = Seq(("NCBI", "P685"),
@@ -80,7 +80,7 @@ def taxonItem(json: JValue) = {
       , name = name.getOrElse("")
       , rank = rank.getOrElse("")
       , parentIds = parentIds
-      , commonNames = nameList
+      , commonNames = nameList.map(name => s"${name.value} @${name.language}")
       , sameAsIds = idsForTaxon(json)))
   } else None
 }
