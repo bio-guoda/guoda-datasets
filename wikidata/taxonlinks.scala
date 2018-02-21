@@ -94,17 +94,16 @@ import spark.implicits._
 
 // extracts taxon links in form Seq((wikidata item, taxon id))
 // for example (Q140, GBIF:5219404)
-val taxonLinks = taxaJsonString.flatMap(line => idMapForTaxon(parse(line)))
+val taxonLinksParsed = taxaJsonString.flatMap(line => idMapForTaxon(parse(line)))
 
 // show first 10 links
-taxonLinks.take(10)
+taxonLinksParsed.take(10)
 
 // write all to parquet file for fast subsequent processing
-//taxonLinks.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
+taxonLinksParsed.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
 
-val taxonInfoParsed = taxaJsonString.flatMap(line => taxonItem(parse(line)))
+val taxonLinks = spark.read.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
 
-taxonInfoParsed.take(10)
 
 //taxonInfoParsed.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
 
@@ -128,3 +127,21 @@ duplicateParentIds.coalesce(1).write.format("csv").save("/guoda/data/source=wiki
 val sameAsIdStats = taxonInfo.as[TaxonTerm].map(x => (x.sameAsIds.length, 1)).rdd.reduceByKey(_ + _).toDS
 
 sameAsIdStats.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/sameAsIdsStats.csv")
+
+//wget https://depot.globalbioticinteractions.org/snapshot/target/data/taxa/taxonCache.tsv.gz
+//wget https://depot.globalbioticinteractions.org/snapshot/target/data/taxa/taxonMap.tsv.gz
+//zcat taxonCache.tsv.gz | bzip2 > taxonCache.tsv.bz2
+//zcat taxonMap.tsv.gz | bzip2 > taxonMap.tsv.bz2
+//hdfs dfs -help
+//hdfs dfs -copyFromLocal taxonCache.tsv.bz2 /guoda/data/source=globi/date=20180220/
+//hdfs dfs -mkdir -p /guoda/data/source=globi/date=20180220
+//hdfs dfs -copyFromLocal taxonCache.tsv.bz2 /guoda/data/source=globi/date=20180220/
+//hdfs dfs -copyFromLocal taxonMap.tsv.bz2 /guoda/data/source=globi/date=20180220/
+
+val globiTaxonMap = spark.read.option("delimiter", """\t""").format("csv").read("/guoda/data/source=globi/date=20180220/taxonMap.tsv.gz")
+val globiTaxonCache = spark.read.format("text").read("/guoda/data/source=globi/date=20180220/taxonCache.tsv.gz")
+
+replaceAll("provideId", wikiDataId)
+
+val broadcastTaxonLinks = spark.broadcast(taxonLinks.map()
+
