@@ -102,4 +102,6 @@ val taxonInfo = taxaJsonString.flatMap(line => taxonItem(parse(line)))
 
 taxonInfo.take(10)
 
+//taxonInfo.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
+
 
