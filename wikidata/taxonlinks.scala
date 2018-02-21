@@ -63,7 +63,7 @@ def idsForTaxon(json: JValue): Seq[String] = {
   }
 }
 
-private def extractList(selector: JValue) = {
+def extractList(selector: JValue): Seq[String] = {
   if (selector.isInstanceOf[JArray]) selector.extract[List[String]] else List(selector.extract[Option[String]]).flatten
 }
 
@@ -73,8 +73,7 @@ def taxonItem(json: JValue) = {
     val id = (json \ "id").extract[Option[String]]
     val rankIds = extractList(json \\ "P105" \ "mainsnak" \ "datavalue" \ "value" \ "id")
     val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
-    val parentIdsSelector = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id")
-    val parentIds = if (parentIdsSelector.isInstanceOf[JArray]) parentIdsSelector.extract[List[String]] else List(parentIdsSelector.extract[Option[String]]).flatten
+    val parentIds = extractList(json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id")
 
     Some(TaxonTerm(id = id.getOrElse("")
       , name = name.getOrElse("")
