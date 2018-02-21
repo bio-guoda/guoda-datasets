@@ -111,6 +111,8 @@ taxonInfoParsed.take(10)
 // https://www.wikidata.org/wiki/Q2405884 has multiple names
 val taxonInfo = spark.read.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
 
+taxonInfo.count
+
 val duplicateNames = taxonInfo.as[TaxonTerm].map(x => (x.names.length, x.id, x.names.mkString("|"))).filter(_._1 > 1)
 
 duplicateNames.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/duplicateNames.csv")
@@ -123,6 +125,4 @@ val duplicateParentIds = taxonInfo.as[TaxonTerm].map(x => (x.parentIds.length, x
 
 duplicateParentIds.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/duplicateParentIds.csv")
 
-val externalIdStats = taxonInfo.as[TaxonTerm].map(x => (x.sameAsIds.length, 1)).reduceByKey(_ + _)
-
-externalIdStats.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/sameAsIdsStats.csv")
+coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/sameAsIdsStats.csv")
