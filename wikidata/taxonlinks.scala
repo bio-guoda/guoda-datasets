@@ -71,16 +71,16 @@ def taxonItem(json: JValue) = {
     val name = (json \\ "P225" \ "mainsnak" \ "datavalue" \ "value").extract[Option[String]]
     val parentIdsSelector = (json \\ "P171" \ "mainsnak" \ "datavalue" \ "value" \ "id")
     val parentIds = if (parentIdsSelector.isInstanceOf[JArray]) parentIdsSelector.extract[List[String]] else List(parentIdsSelector.extract[Option[String]]).flatten
-    val nameList = (json \\ "labels").children.flatMap {
-      case (obj: JValue) => obj.extractOpt[CommonName]
-      case _ => None
-    }
+    val nameList = (json \\ "labels").children
+      .flatMap(value => value.extractOpt[CommonName])
+      .map(commonName => s"${commonName.value} @${commonName.language}")
+
 
     Some(TaxonTerm(id = id.getOrElse("")
       , name = name.getOrElse("")
       , rank = rank.getOrElse("")
       , parentIds = parentIds
-      , commonNames = nameList.map(name => s"${name.value} @${name.language}")
+      , commonNames = nameList
       , sameAsIds = idsForTaxon(json)))
   } else None
 }
