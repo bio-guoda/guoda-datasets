@@ -1,8 +1,8 @@
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
-case class CommonName(value: String
-                      , language: String)
+case class CommonName(language: String
+                      , value: String)
 
 case class TaxonTerm(id: String
                      , name: String
