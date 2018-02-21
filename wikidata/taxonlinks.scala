@@ -78,7 +78,7 @@ def taxonItem(json: JValue) = {
 
     Some(TaxonTerm(id = id.getOrElse("")
       , name = name.getOrElse("")
-      , rank = rank.getOrElse("")
+      , rankIds = rankIds
       , parentIds = parentIds
       , sameAsIds = idsForTaxon(json)))
   } else None
