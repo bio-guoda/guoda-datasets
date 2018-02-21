@@ -102,10 +102,27 @@ taxonLinks.take(10)
 // write all to parquet file for fast subsequent processing
 //taxonLinks.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
 
-val taxonInfo = taxaJsonString.flatMap(line => taxonItem(parse(line)))
+val taxonInfoParsed = taxaJsonString.flatMap(line => taxonItem(parse(line)))
 
-taxonInfo.take(10)
+taxonInfoParsed.take(10)
 
-//taxonInfo.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
+//taxonInfoParsed.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
 
+// https://www.wikidata.org/wiki/Q2405884 has multiple names
+val taxonInfo = spark.read.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
 
+val duplicateNames = taxonInfo.as[TaxonItem].map(x => (x.names.length, x.id, x.names.mkString("|"))).filter(_._1 > 1)
+
+duplicateNames.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/duplicateNames.csv")
+
+val duplicateRanks = taxonInfo.as[TaxonItem].map(x => (x.rankIds.length, x.id, x.rankIds.mkString("|"))).filter(_._1 > 1)
+
+duplicateRanks.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/duplicateRanks.csv")
+
+val duplicateParentIds = taxonInfo.as[TaxonItem].map(x => (x.parentIds.length, x.id, x.parentIds.mkString("|"))).filter(_._1 > 1)
+
+duplicateParentIds.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/duplicateParentIds.csv")
+
+val externalIdStats = taxonInfo.as[TaxonItem].map(x => (x.externalIds.length, 1)).reduceByKey(_ + _)
+
+externalIdStats.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/date=20171227/externalIdStats.csv")
