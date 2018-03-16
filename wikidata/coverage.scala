@@ -137,11 +137,7 @@ val compositesWithMultipleMappingForSinglePrefix = groupedByComposites.map(r => 
 
 compositesWithMultipleMappingForSinglePrefix.take(5)
 
-// calculate number of possibly inconsistent mappings (multiple id matches with a scheme) by size of composite key
-compositesWithMultipleMappingForSinglePrefix.map(r => (r._4, r._3)).reduceByKey((agg, v) => agg + (if (v > 0) 1 else 0)).take(5)
 // the more overlap, the fewer duplicates in mappings
-// res38: Array[(Int, Int)] = Array((1,1510), (2,14), (3,0), (4,0))
-
 compositesWithMultipleMappingForSinglePrefix.map(r => (r._4, r._3)).filter(_._2 > 0).map(r => (r._1, 1)).reduceByKey(_ + _).take(5)
 // res58: Array[(Int, Int)] = Array((1,8975), (2,56))
 
