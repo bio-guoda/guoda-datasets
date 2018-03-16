@@ -27,7 +27,7 @@ val globiLinks = globi.as[(String, String, String, String)].map(row => (row._3, 
 
 // combine the link tables
 // something -> {ott|wd|globi}
-val links = ottLinks.union(wkLinks).union(globiLinks)
+val links = ottLinks.union(wkLinks).union(globiLinks).cache()
 
 // links all external ids to respective, wd, ott, and globi terms
 val groupedBy = links.map(link => (link._1, Seq(link._2))).rdd.reduceByKey(_ ++ _)
@@ -35,6 +35,18 @@ val groupedBy = links.map(link => (link._1, Seq(link._2))).rdd.reduceByKey(_ ++ 
 val taxonSchemes = List("NCBI","IF","GBIF", "WORMS", "IF")
 
 val groupedById = groupedBy.filter(x => taxonSchemes.contains(x._1.split(":").head)).cache()
+
+// links stats for OTT
+links.map(x => (x._1.split(":").head, x._2.split(":").head)).filter(x => taxonSchemes.contains(x._1)).filter(_._2 == "OTT").map(x => (x._1, 1)).rdd.reduceByKey(_ + _).take(10)
+// res0: Array[(String, Int)] = Array((WORMS,327929), (NCBI,1355207), (GBIF,2451566), (IF,276262))
+
+// links stats for WD
+links.map(x => (x._1.split(":").head, x._2.split(":").head)).filter(x => taxonSchemes.contains(x._1)).filter(_._2 == "WD").map(x => (x._1, 1)).rdd.reduceByKey(_ + _).take(10)
+// res1: Array[(String, Int)] = Array((WORMS,288110), (NCBI,410092), (GBIF,1779789), (IF,76497))
+
+// links stats for GloBI
+links.map(x => (x._1.split(":").head, x._2.split(":").head)).filter(x => taxonSchemes.contains(x._1)).filter(_._2 == "GLOBI").map(x => (x._1, 1)).rdd.reduceByKey(_ + _).take(10)
+// res2: Array[(String, Int)] = Array((WORMS,68565), (NCBI,704361), (GBIF,315173), (IF,33400))
 
 // all unique external ids used
 groupedById.map(_._1).distinct.count
