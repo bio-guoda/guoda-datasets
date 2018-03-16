@@ -39,7 +39,7 @@ def idMapForTaxon(json: JValue): Seq[(String, String)] = {
       taxonMap.flatMap(entry => {
         (json \ "claims" \ entry._2 \\ "mainsnak" \ "datavalue" \ "value").extract[Option[String]] match {
           case Some(externalId) =>
-            Some((s"$id", s"${entry._1}:$externalId"))
+            Some((s"${entry._1}:$externalId", s"$id"))
           case None => None
         }
       })
@@ -91,6 +91,8 @@ val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/la
 val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replaceFirst(""",$""", ""))
 
 import spark.implicits._
+import org.apache.spark.rdd.PairRDDFunctions
+import org.apache.spark.SparkContext._
 
 // extracts taxon links in form Seq((wikidata item, taxon id))
 // for example (Q140, GBIF:5219404)
@@ -103,7 +105,7 @@ taxonLinksParsed.take(10)
 taxonLinksParsed.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
 
 val taxonLinks = spark.read.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
-
+val taxonLinksDS = taxonLinks.as[(String, String)]
 
 //taxonInfoParsed.write.parquet("/guoda/data/source=wikidata/date=20171227/taxonInfo.parquet")
 
@@ -138,8 +140,8 @@ sameAsIdStats.coalesce(1).write.format("csv").save("/guoda/data/source=wikidata/
 //hdfs dfs -copyFromLocal taxonCache.tsv.bz2 /guoda/data/source=globi/date=20180220/
 //hdfs dfs -copyFromLocal taxonMap.tsv.bz2 /guoda/data/source=globi/date=20180220/
 
-val globiTaxonMap = spark.read.option("delimiter", """\t""").format("csv").read("/guoda/data/source=globi/date=20180220/taxonMap.tsv.gz")
-val globiTaxonCache = spark.read.format("text").read("/guoda/data/source=globi/date=20180220/taxonCache.tsv.gz")
+val globiTaxonMap = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180220/taxonMap.tsv.bz2")
+val globiTaxonCache = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180220/taxonCache.tsv.gz")
 
 replaceAll("provideId", wikiDataId)
 
