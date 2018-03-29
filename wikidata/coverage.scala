@@ -1,3 +1,5 @@
+// Apache Spark 2.2.x script used to calculate coverage statistics
+
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
@@ -10,19 +12,19 @@ import spark.implicits._
 import org.apache.spark.rdd.PairRDDFunctions
 import org.apache.spark.SparkContext._
 
+// GloBI taxon v0.4.2, ott 3.0, and wd 20171227 .
+var datadir = "[your datadir]"
 
-//val wdTaxonLinks = spark.read.parquet("/guoda/data/source=wikidata/date=20171227/taxonLinks.parquet")
-//val taxonLinksDS = taxonLinks.as[(String, String)]
-
-// data experiments using GloBI taxon v0.4.2, ott 3.0, and wd 20171227 .
-
-val wd = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load("/home/jorrit/proj/wikidata/data/wikiDataTaxonLinks20171227.tsv.gz")
+// load wikidata links extracted via taxonlinks.scala script
+val wd = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadir + "/wikiDataTaxonLinks20171227.tsv.gz")
 val wkLinks = wd.as[(String, String)].map(link => (link._2, s"WD:${link._1}"))
 
-val ott = spark.read.format("csv").option("delimiter", "|").option("header", "true").load("/home/jorrit/proj/wikidata/ott/taxonomy.tsv")
+// load Open Tree of Life Taxonomy
+val ott = spark.read.format("csv").option("delimiter", "|").option("header", "true").load(datadir + "/ott/taxonomy.tsv")
 val ottLinks = ott.as[(String, String, String, String, String, String, String, String)].flatMap(row => row._5.toUpperCase.split(",").map(id => (id.trim, s"OTT:${row._1}".trim)))
 
-val globi = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load("/home/jorrit/proj/wikidata/data/taxon-0.4.2/taxonMap.tsv.gz")
+// load GloBI Taxon Cache v0.4.2
+val globi = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadir + "/taxon-0.4.2/taxonMap.tsv.gz")
 val globiLinks = globi.as[(String, String, String, String)].map(row => (row._3, s"GLOBI:${row._1}@${row._2}")).filter(link => link._1 != null && !link._1.startsWith("OTT:") && !link._1.startsWith("WD:"))
 
 // combine the link tables

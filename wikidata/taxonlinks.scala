@@ -1,3 +1,9 @@
+// Apache Spark 2.2.1 script used to extract wikidata taxon
+// concepts and associated taxonomic identifiers.
+// Assumes a wikidata json dump to be available in hdfs (see below).
+// for more information about wikidata dumps, see https://dumps.wikimedia.org/wikidatawiki/entities/ .
+
+
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
