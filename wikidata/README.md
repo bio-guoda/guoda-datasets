@@ -2,11 +2,14 @@ This page contains some experiments on how to get all of wikidata and mine it us
 
 Before attempting to get and import the data, please check whether a version already exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
 
-# get data
+# get wikidata
+
 
 ```
-wget https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2
+wget https://zenodo.org/record/1211767/files/wikidata20171227.json.bz2
 ```
+
+Also see: WikiData. (2018). Wikidata dump 2017-12-27 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1211767 .
 
 Note that it is important to grab the .bz2 archive to allow for parallel ingestion of data. Archives with .gz have to be imported sequentially. 
 
