@@ -11,16 +11,20 @@ import org.apache.spark.sql.SaveMode
 
 val start = LocalDateTime.now()
 
-import spark.implicits._
 
 case class CommonName(language: String
                       , value: String)
 
-case class TaxonTerm(id: String
-                     , names: Seq[String]
-                     , rankIds: Seq[String]
-                     , parentIds: Seq[String]
-                     , sameAsIds: Seq[String])
+case class TaxonTerm(id: String = ""
+                     , names: Seq[String] = Seq()
+                     , rankIds: Seq[String] = Seq()
+                     , parentIds: Seq[String] = Seq()
+                     , sameAsIds: Seq[String] = Seq())
+
+case class TaxonMap(providedTaxonId: String = "", providedTaxonName: String = "", resolvedTaxonId: String = "", resolvedTaxonName: String = "")
+case class TaxonCache(id: String, name: String, rank: String, commonNames: String, path: String, pathIds: String, pathNames: String, externalUrl: String, thumbnailUrl: String)
+
+import spark.implicits._
 
 val taxonMap = Seq(("NCBI", "P685"),
   ("ITIS", "P815"),
@@ -149,14 +153,12 @@ sameAsIdStats.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").save("/gu
 val globiTaxonMap = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180220/taxonMap.tsv.bz2")
 val globiTaxonCache = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180220/taxonCache.tsv.bz2")
 
-case class TaxonMap(providedTaxonId: String = "", providedTaxonName: String = "", resolvedTaxonId: String = "", resolvedTaxonName: String = "")
-case class TaxonCache(id: String, name: String, rank: String, commonNames: String, path: String, pathIds: String, pathNames: String, externalUrl: String, thumbnailUrl: String)
 
 val taxonMapGloBI = globiTaxonMap.as[TaxonMap] 
 val taxonCacheGloBI = globiTaxonCache.as[TaxonCache]
 
 val wikidataInfo = taxonInfo.as[TaxonTerm]
-val wikidataInfoNotEmpty = wikidataInfo.filter(_.names.nonEmpty).filter(_.rankIds.nonEmpty)
+val wikidataInfoNotEmpty = wikidataInfo.filter(_.names.nonEmpty).filter(_.sameAsIds.nonEmpty).filter(_.rankIds.nonEmpty)
 
 val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id => TaxonMap(s"WD:${row.id}", row.names.head, id, "")))
 
