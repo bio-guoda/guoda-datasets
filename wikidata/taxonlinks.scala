@@ -7,6 +7,7 @@
 import java.time._
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
+import org.apache.spark.sql.SaveMode
 
 val start = LocalDateTime.now()
 
