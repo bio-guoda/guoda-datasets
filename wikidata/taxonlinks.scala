@@ -11,6 +11,8 @@ import org.apache.spark.sql.SaveMode
 
 val start = LocalDateTime.now()
 
+import spark.implicits._
+
 case class CommonName(language: String
                       , value: String)
 
@@ -103,7 +105,6 @@ val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/la
 // turn into JSON Lines text format, also called newline-delimited JSON (see http://jsonlines.org/)
 val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replaceFirst(""",$""", ""))
 
-import spark.implicits._
 import org.apache.spark.rdd.PairRDDFunctions
 import org.apache.spark.SparkContext._
 
