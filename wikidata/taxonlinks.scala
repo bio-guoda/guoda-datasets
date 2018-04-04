@@ -186,7 +186,7 @@ val mappedMap = mapByKey.rdd.reduceByKey( (x,y) => swapWikidata(x,y) )
 
 
 val taxonMapCombined = mappedMap.map(_._2).filter(!hasWikidata(_)).distinct
-taxonMapCombined.as[TaxonMap].coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
+taxonMapCombined.toDS.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
 taxonCacheCombined.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonCache.tsv")
 
 val taxonMapCombinedLoad = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
