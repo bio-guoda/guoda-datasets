@@ -144,7 +144,7 @@ compositesWithMultipleMappingForSinglePrefix.map(r => (r._4, r._3)).filter(_._2 
 // res58: Array[(Int, Int)] = Array((1,8975), (2,56))
 
 // write duplicates with pair composite (e.g., globi + {ott|wd})
- compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 2).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.option("delimiter", "\t").format("csv").save(datadir + "/duplicatesWithCompositeKeyPair20180316.tsv")
+compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 2).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.option("delimiter", "\t").format("csv").save(datadir + "/duplicatesWithCompositeKeyPair20180316.tsv")
 
 // write multiples with singleton composite (e.g., only globi name)
 compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 1).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.option("delimiter", "\t").format("csv").save(datadir + "/duplicatesWithCompositeKeySingleton20180316.tsv")
