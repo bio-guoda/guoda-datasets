@@ -13,10 +13,10 @@ git clone https://github.com/bio-guoda/guoda-datasets
 cd guoda-datasets/wikidata
 ```
 
-# install data
+# install data 
 These experiments rely on Open Tree of Life Taxonomy (OTT), GloBI Taxon Graph, and Wikidata.
 
-Before attempting to get and install the data, please check whether a version already exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
+Before attempting to get and install the data, please check whether a version already exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata . If you don't know how to do this, just skip this step.
 
 If no data is available, please run the following commands in the terminal:
 
