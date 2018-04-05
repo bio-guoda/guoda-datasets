@@ -3,6 +3,7 @@
 import spark.implicits._
 import org.apache.spark.rdd.PairRDDFunctions
 import org.apache.spark.SparkContext._
+import org.apache.spark.sql.SaveMode
 
 // assuming GloBI, OTT and Wikidata taxon graphs have been installed using install scripts
 var datadir = "/guoda/data/"
@@ -16,7 +17,8 @@ val ott = spark.read.format("csv").option("delimiter", "|").option("header", "tr
 val ottLinks = ott.as[(String, String, String, String, String, String, String, String)].flatMap(row => row._5.toUpperCase.split(",").map(id => (id.trim, s"OTT:${row._1}".trim)))
 
 // load GloBI Taxon Cache v0.4.2
-val globi = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadir + "/source=globi/date=20180305/taxonMap.tsv.bz2")
+val datadirGloBI = datadir + "/source=globi/date=20180305"
+val globi = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadirGloBI + "/taxonMap.tsv.bz2")
 val globiLinks = globi.as[(String, String, String, String)].map(row => (row._3, s"GLOBI:${row._1}@${row._2}")).filter(link => link._1 != null && !link._1.startsWith("OTT:") && !link._1.startsWith("WD:"))
 
 // combine the link tables
@@ -136,7 +138,7 @@ compositesWithMultipleMappingForSinglePrefix.map(r => (r._4, r._3)).filter(_._2 
 // res58: Array[(Int, Int)] = Array((1,8975), (2,56))
 
 // write duplicates with pair composite (e.g., globi + {ott|wd})
-compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 2).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.option("delimiter", "\t").format("csv").save(datadir + "/duplicatesWithCompositeKeyPair20180316.tsv")
+compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 2).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.mode(SaveMode.Overwrite).option("delimiter", "\t").format("csv").save(datadirGloBI + "/duplicatesWithCompositeKeyPair.tsv")
 
 // write multiples with singleton composite (e.g., only globi name)
-compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 1).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.option("delimiter", "\t").format("csv").save(datadir + "/duplicatesWithCompositeKeySingleton20180316.tsv")
+compositesWithMultipleMappingForSinglePrefix.filter(r => r._3 > 0 && r._4 == 1).map(r => (r._1, r._2.mkString("|"), r._3, r._4)).toDF.coalesce(1).write.mode(SaveMode.Overwrite).option("delimiter", "\t").format("csv").save(datadirGloBI + "/duplicatesWithCompositeKeySingleton.tsv")
