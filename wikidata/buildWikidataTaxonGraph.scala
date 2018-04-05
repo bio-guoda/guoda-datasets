@@ -145,4 +145,4 @@ val end = LocalDateTime.now()
 
 val durationInSeconds = java.time.Duration.between(start, end).getSeconds
 
-println(s"handling Wikidata taxa into GloBI Taxon Graph took [$durationInSeconds]s and started at [$start]")
+println(s"extracting taxa from Wikidata dump took [$durationInSeconds]s and started at [$start]")

@@ -1,30 +1,22 @@
 // Apache Spark 2.2.x script used to calculate coverage statistics
 
-import org.json4s._
-import org.json4s.jackson.JsonMethods._
-
-
-@transient
-lazy implicit val formats = DefaultFormats
-
-
 import spark.implicits._
 import org.apache.spark.rdd.PairRDDFunctions
 import org.apache.spark.SparkContext._
 
-// GloBI taxon v0.4.2, ott 3.0, and wd 20171227 .
-var datadir = "[your datadir]"
+// assuming GloBI, OTT and Wikidata taxon graphs have been installed using install scripts
+var datadir = "/guoda/data/"
 
 // load wikidata links extracted via taxonlinks.scala script
-val wd = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadir + "/wikiDataTaxonLinks20171227.tsv.gz")
+val wd = spark.read.parquet(datadir + "/source=wikidata/date=20171227/taxonLinks.parquet")
 val wkLinks = wd.as[(String, String)].map(link => (link._2, s"WD:${link._1}"))
 
 // load Open Tree of Life Taxonomy
-val ott = spark.read.format("csv").option("delimiter", "|").option("header", "true").load(datadir + "/ott/taxonomy.tsv")
+val ott = spark.read.format("csv").option("delimiter", "|").option("header", "true").load(datadir + "/source=ott/date=20170226/taxonomy.tsv")
 val ottLinks = ott.as[(String, String, String, String, String, String, String, String)].flatMap(row => row._5.toUpperCase.split(",").map(id => (id.trim, s"OTT:${row._1}".trim)))
 
 // load GloBI Taxon Cache v0.4.2
-val globi = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadir + "/taxon-0.4.2/taxonMap.tsv.gz")
+val globi = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(datadir + "/source=globi/date=20180305/taxonMap.tsv.bz2")
 val globiLinks = globi.as[(String, String, String, String)].map(row => (row._3, s"GLOBI:${row._1}@${row._2}")).filter(link => link._1 != null && !link._1.startsWith("OTT:") && !link._1.startsWith("WD:"))
 
 // combine the link tables
