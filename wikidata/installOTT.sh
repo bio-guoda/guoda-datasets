@@ -3,6 +3,8 @@
 # Download and import OTT taxon graph into GUODA hdfs .
 #
 
+set -x
+
 VERSION=3.0
 IMPORT_DATE=20170226
 

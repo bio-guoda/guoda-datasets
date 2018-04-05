@@ -3,6 +3,8 @@
 # Download and import GloBI taxon graph into GUODA hdfs .
 #
 
+set -x
+
 install() {
  local ZENODO_ID=$1
  local IMPORT_DATE=$2
