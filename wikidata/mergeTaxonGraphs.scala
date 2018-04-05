@@ -29,7 +29,7 @@ import spark.implicits._
 
 val baseDir = "/guoda/data/"
 val baseDirWikidata = baseDir + "/source=wikidata/date=20171227"
-val baseDirGloBI = dataDir + "/source=globi/date=20180305"
+val baseDirGloBI = baseDir + "/source=globi/date=20180305"
 
 val taxonInfo = spark.read.parquet(s"$baseDirWikidata/taxonInfo.parquet")
 
