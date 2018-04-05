@@ -129,7 +129,7 @@ val reducedByComposites = idToComposites.map(r => (r._2, Seq(r._1))).reduceByKey
 
 // inspect examples where ids are mapped to multiple ids from similar naming scheme
 
-val compositesWithMultipleMappingForSinglePrefix = groupedByComposites.map(r => { val prefixes = r._2.distinct.map(_.split(":").head); val reps = prefixes.length - prefixes.distinct.length; val keyLength = r._1.split("""\|""").length; (r._1, r._2, reps, keyLength) })
+val compositesWithMultipleMappingForSinglePrefix = reducedByComposites.map(r => { val prefixes = r._2.distinct.map(_.split(":").head); val reps = prefixes.length - prefixes.distinct.length; val keyLength = r._1.split("""\|""").length; (r._1, r._2, reps, keyLength) })
 
 compositesWithMultipleMappingForSinglePrefix.take(5)
 
