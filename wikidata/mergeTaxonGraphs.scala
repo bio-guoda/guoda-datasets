@@ -23,7 +23,7 @@ case class TaxonTerm(id: String = ""
                      , sameAsIds: Seq[String] = Seq())
 
 case class TaxonMap(providedTaxonId: String = "", providedTaxonName: String = "", resolvedTaxonId: String = "", resolvedTaxonName: String = "")
-case class TaxonCache(id: String, name: String, rank: String, commonNames: String, path: String, pathIds: String, pathNames: String, externalUrl: String, thumbnailUrl: String = "")
+case class TaxonCache(id: String, name: String, rank: String, commonNames: String, path: String, pathIds: String, pathNames: String, externalUrl: String)
 
 import spark.implicits._
 
