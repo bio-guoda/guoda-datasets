@@ -13,7 +13,6 @@ import org.apache.spark.SparkContext._
 
 val start = LocalDateTime.now()
 
-
 case class CommonName(language: String
                       , value: String)
 

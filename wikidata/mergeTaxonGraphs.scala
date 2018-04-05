@@ -27,12 +27,16 @@ case class TaxonCache(id: String, name: String, rank: String, commonNames: Strin
 
 import spark.implicits._
 
-val taxonInfo = spark.read.parquet(s"$baseDir/taxonInfo.parquet")
+val baseDir = "/guoda/data/"
+val baseDirWikidata = baseDir + "/source=wikidata/date=20171227"
+val baseDirGloBI = dataDir + "/source=globi/date=20180305"
+
+val taxonInfo = spark.read.parquet(s"$baseDirWikidata/taxonInfo.parquet")
 
 // this assumes that you have some GloBI taxon cache loaded using installGloBITaxonGraph.sh or similar.
 
-val globiTaxonMap = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(s"$baseDir/taxonMap.tsv.bz2")
-val globiTaxonCache = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(s"$baseDir/taxonCache.tsv.bz2")
+val globiTaxonMap = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(s"$baseDirGloBI/taxonMap.tsv.bz2")
+val globiTaxonCache = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(s"$baseDirGloBI/taxonCache.tsv.bz2")
 
 
 val taxonMapGloBI = globiTaxonMap.as[TaxonMap] 

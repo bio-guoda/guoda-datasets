@@ -1,32 +1,60 @@
 This page contains some experiments on how to get all of wikidata and mine it using scala/spark. 
 
-Before attempting to get and import the data, please check whether a version already exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
 
-# get wikidata
+# create a terminal
+To ensure the these are available, login to jupyter.idigbio.org using your github credentials and create a terminal.
 
+# clone this repository
+In the terminal, run the following to clone scripts:
 
 ```
-wget https://zenodo.org/record/1211767/files/wikidata20171227.json.bz2
+git clone https://github.com/bio-guoda/guoda-datasets
+cd guoda-datasets/wikidata
+```
+
+# install data
+These experiments rely on Open Tree of Life Taxonomy (OTT), GloBI Taxon Graph, and Wikidata.
+
+Before attempting to get and install the data, please check whether a version already exists in the guoda hdfs cluster at hdfs://guoda/data/source=wikidata .
+
+If no data is available, please run the following commands in the terminal:
+
+```
+./installGloBITaxonGraph.sh
+./installOTT.sh
+./installWikidata.sh
 ```
 
 Also see: WikiData. (2018). Wikidata dump 2017-12-27 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1211767 .
 
 Note that it is important to grab the .bz2 archive to allow for parallel ingestion of data. Archives with .gz have to be imported sequentially. 
 
-# import data
+# (re-)build wikidata taxon graph
 
-in terminal, import dataset into hdfs -
+To rebuild the wikidata taxon graph, run the following in the terminal
+
 ```
-hdfs dfs -put latest-all.json.bz2 hdfs://guoda/data/source=wikidata/date=20171227/latest.all.json.bz2
+cat buildWikidataTaxonGraph.scala | ./guoda-spark-shell.sh
 ```
 
-where 20171227 is the date of the wikidata dump. 
+to merge the GloBI and Wikidata Taxon Graph, execute:
 
-# mine data
+```
+cat mergeTaxonGraphs.scala | ./guoda-spark-shell.sh
+```
 
-## extract json objects
+Now, to reproduce the coverage analysis between OTT, GloBI and Wikidata taxon graphs, run;
 
-Wiki data archive is a giant json array of items like 
+```
+cat analyzeTaxonGraphs.scala | ./guoda-spark-shell.sh
+```
+
+# inspect scripts step-by-step
+
+Now that you're reproduced the results and feel courages, you can inspect and dissect to learn more about how the analysis was done.
+
+# misc
+Wiki data archive is a giant json array of items like
 
 ```
 [
@@ -55,7 +83,7 @@ val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineE
 
 Wikidata contains taxon items (e.g., [lion](https://www.wikidata.org/wiki/Q140))with rich associations to all sorts of data including taxonomies, images, commonnames and more. The example below shows how to select taxon items and extract taxon ids for various taxonomic systems (e.g., GBIF, ITIS, NCBI, EOL, WoRMS). 
 
-For full example, see [wikidata/taxonlinks.scala](https://github.com/bio-guoda/guoda-datasets/blob/master/wikidata/taxonlinks.scala). You can copy-paste this example into spark-shell, or use ```:paste [filename]``` to run the commands.
+For full example, see [wikidata/buildWikidataTaxonGraph.scala](https://github.com/bio-guoda/guoda-datasets/blob/master/wikidata/buildWikidataTaxonGraph.scala). You can pipe, copy-paste this example into spark-shell, or use ```:paste [filename]``` to run the commands.
 
 An example run in a spark shell looks like:
 
@@ -72,8 +100,8 @@ Using Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_151)
 Type in expressions to have them evaluated.
 Type :help for more information.
 
-scala> :paste "taxonlinks.scala"
-Pasting file taxonlinks.scala...
+scala> :paste "buildWikidataTaxonGraph.scala"
+Pasting file buildWikidataTaxonGraph.scala...
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 formats: org.json4s.DefaultFormats.type = <lazy>
