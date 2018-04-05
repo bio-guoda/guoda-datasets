@@ -8,6 +8,8 @@ import java.time._
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 import org.apache.spark.sql.SaveMode
+import org.apache.spark.rdd.PairRDDFunctions
+import org.apache.spark.SparkContext._
 
 val start = LocalDateTime.now()
 
@@ -109,8 +111,6 @@ val wikidata = spark.read.textFile("/guoda/data/source=wikidata/date=20171227/la
 // turn into JSON Lines text format, also called newline-delimited JSON (see http://jsonlines.org/)
 val taxaJsonString = wikidata.filter(_.contains("""Q16521"""")).map(_.stripLineEnd.replaceFirst(""",$""", ""))
 
-import org.apache.spark.rdd.PairRDDFunctions
-import org.apache.spark.SparkContext._
 
 // extracts taxon links in form Seq((wikidata item, taxon id))
 // for example (Q140, GBIF:5219404)
