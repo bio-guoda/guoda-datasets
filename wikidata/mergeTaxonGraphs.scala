@@ -55,9 +55,7 @@ taxonCacheCombined.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("c
 
 val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id => TaxonMap(s"WD:${row.id}", row.names.head, id, "")))
 
-val mappedMap = taxonMapGloBI.joinWith(taxonMapWikidata, taxonMapWikidata.toDF.col("resolvedTaxonId") ==
-= taxonMapGloBI.toDF.col("resolvedTaxonId")).map(pair => TaxonMap(pair._1.providedTaxonId, pair._1.providedTaxonN
-ame, pair._2.providedTaxonId, pair._2.providedTaxonName))
+val mappedMap = taxonMapGloBI.joinWith(taxonMapWikidata, taxonMapWikidata.toDF.col("resolvedTaxonId") === taxonMapGloBI.toDF.col("resolvedTaxonId")).map(pair => TaxonMap(pair._1.providedTaxonId, pair._1.providedTaxonName, pair._2.providedTaxonId, pair._2.providedTaxonName))
 
 
 val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct
