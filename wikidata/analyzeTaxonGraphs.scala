@@ -25,7 +25,7 @@ val globiLinks = globi.as[(String, String, String, String)].map(row => (row._3, 
 // something -> {ott|wd|globi}
 val links = ottLinks.union(wkLinks).union(globiLinks).cache()
 
-links.write.mode(SaveMode.Overwrite).coalesce(1).format("csv").option("delimiter","\t").save(s"$datadirGloBI/links-globi-wd-ott.tsv")
+links.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("delimiter","\t").save(s"$datadirGloBI/links-globi-wd-ott.tsv")
 
 // links all external ids to respective, wd, ott, and globi terms
 val groupedBy = links.map(link => (link._1, Seq(link._2))).rdd.reduceByKey(_ ++ _)
