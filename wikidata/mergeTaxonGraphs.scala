@@ -23,13 +23,13 @@ case class TaxonTerm(id: String = ""
                      , sameAsIds: Seq[String] = Seq())
 
 case class TaxonMap(providedTaxonId: String = "", providedTaxonName: String = "", resolvedTaxonId: String = "", resolvedTaxonName: String = "")
-case class TaxonCache(id: String, name: String, rank: String, commonNames: String, path: String, pathIds: String, pathNames: String, externalUrl: String)
+case class TaxonCache(id: String, name: String, rank: String, commonNames: String, path: String, pathIds: String, pathNames: String, externalUrl: String, thumbnailUrl: String)
 
 import spark.implicits._
 
 val baseDir = "/guoda/data/"
 val baseDirWikidata = baseDir + "/source=wikidata/date=20171227"
-val baseDirGloBI = baseDir + "/source=globi/date=20180305"
+val baseDirGloBI = baseDir + "/source=globi/date=20180125"
 
 val taxonInfo = spark.read.parquet(s"$baseDirWikidata/taxonInfo.parquet")
 
