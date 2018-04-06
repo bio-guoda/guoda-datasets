@@ -46,7 +46,7 @@ val wikidataInfo = taxonInfo.as[TaxonTerm]
 val wikidataInfoNotEmpty = wikidataInfo.filter(_.names.nonEmpty).filter(_.sameAsIds.nonEmpty).filter(_.rankIds.nonEmpty)
 
 
-val taxonCacheWikidata = wikidataInfoNotEmpty.map(row => TaxonCache(id = s"WD:${row.id}", name = row.names.head, rank = s"WD:${row.rankIds.head}", commonNames = "", path = (row.parentIds.map(id => "") ++ Seq(row.names.head)).mkString("|"), pathIds = (row.parentIds.map(id => s"WD:$id") ++ Seq(s"WD:${row.id}")).mkString("|"), pathNames = (row.parentIds.map(id => "") ++ Seq(s"WD:${row.rankIds.head}")).mkString("|"), externalUrl=s"https://www.wikidata.org/wiki/${row.id}"))
+val taxonCacheWikidata = wikidataInfoNotEmpty.map(row => TaxonCache(id = s"WD:${row.id}", name = row.names.head, rank = s"WD:${row.rankIds.head}", commonNames = "", path = (row.parentIds.map(id => "") ++ Seq(row.names.head)).mkString(" | "), pathIds = (row.parentIds.map(id => s"WD:$id") ++ Seq(s"WD:${row.id}")).mkString(" | "), pathNames = (row.parentIds.map(id => "") ++ Seq(s"WD:${row.rankIds.head}")).mkString(" | "), externalUrl=s"https://www.wikidata.org/wiki/${row.id}"))
 
 
 // combine the caches
