@@ -48,9 +48,10 @@ val wikidataInfoNotEmpty = wikidataInfo.filter(_.names.nonEmpty).filter(_.sameAs
 
 val taxonCacheWikidata = wikidataInfoNotEmpty.map(row => TaxonCache(id = s"WD:${row.id}", name = row.names.head, rank = s"WD:${row.rankIds.head}", commonNames = "", path = (row.parentIds.map(id => "") ++ Seq(row.names.head)).mkString("|"), pathIds = (row.parentIds.map(id => s"WD:$id") ++ Seq(s"WD:${row.id}")).mkString("|"), pathNames = (row.parentIds.map(id => "") ++ Seq(s"WD:${row.rankIds.head}")).mkString("|"), externalUrl=s"https://www.wikidata.org/wiki/${row.id}"))
 
+
 // combine the caches
-val taxonCacheCombined = taxonCacheGloBI.union(taxonCacheWikidata)
-taxonCacheCombined.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonCache.tsv")
+val taxonCacheCombined = taxonCacheGloBI.union(taxonCacheWikidata).distinct
+taxonCacheCombined.orderBy(col("id"), col("name")).coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonCache.tsv")
 
 
 val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id => TaxonMap(s"WD:${row.id}", row.names.head, id, "")))
@@ -58,9 +59,9 @@ val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id 
 val mappedMap = taxonMapGloBI.joinWith(taxonMapWikidata, taxonMapWikidata.toDF.col("resolvedTaxonId") === taxonMapGloBI.toDF.col("resolvedTaxonId")).map(pair => TaxonMap(pair._1.providedTaxonId, pair._1.providedTaxonName, pair._2.providedTaxonId, pair._2.providedTaxonName))
 
 
-val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct.orderBy("providedTaxonId", Seq("providedTaxonName", "resolvedTaxonId", "resolvedTaxonName"))
+val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct.orderBy(col("providedTaxonId"), col("providedTaxonName"), col("resolvedTaxonId"), col("resolvedTaxonName"))
 
-taxonMapCombined.distinct.orderBy("providedTaxonId", Seq("providedTaxonName", "resolvedTaxonId", "resolvedTaxonName")).coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
+taxonMapCombined.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
 
 
 
