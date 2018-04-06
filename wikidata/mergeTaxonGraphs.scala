@@ -60,7 +60,8 @@ val mappedMap = taxonMapGloBI.joinWith(taxonMapWikidata, taxonMapWikidata.toDF.c
 
 val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct
 
-taxonMapCombined.toDS.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
+taxonMapCombined.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
+
 
 
 val taxonMapCombinedLoad = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
