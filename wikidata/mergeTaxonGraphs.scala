@@ -45,35 +45,25 @@ val taxonCacheGloBI = globiTaxonCache.as[TaxonCache]
 val wikidataInfo = taxonInfo.as[TaxonTerm]
 val wikidataInfoNotEmpty = wikidataInfo.filter(_.names.nonEmpty).filter(_.sameAsIds.nonEmpty).filter(_.rankIds.nonEmpty)
 
-val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id => TaxonMap(s"WD:${row.id}", row.names.head, id, "")))
 
 val taxonCacheWikidata = wikidataInfoNotEmpty.map(row => TaxonCache(id = s"WD:${row.id}", name = row.names.head, rank = s"WD:${row.rankIds.head}", commonNames = "", path = (row.parentIds.map(id => "") ++ Seq(row.names.head)).mkString("|"), pathIds = (row.parentIds.map(id => s"WD:$id") ++ Seq(s"WD:${row.id}")).mkString("|"), pathNames = (row.parentIds.map(id => "") ++ Seq(s"WD:${row.rankIds.head}")).mkString("|"), externalUrl=s"https://www.wikidata.org/wiki/${row.id}"))
 
 // combine the caches
 val taxonCacheCombined = taxonCacheGloBI.union(taxonCacheWikidata)
-
-// infer wikidata links from shared external ids
-val mapByKey = taxonMapGloBI.map(x => (x.resolvedTaxonId, x)).union(taxonMapWikidata.map(x => (x.resolvedTaxonId, x)))
-
-def hasWikidata(x: TaxonMap) = {
-  x.providedTaxonId != null && x.providedTaxonId.startsWith("WD:")
-}
-
-def swapWikidata(x: TaxonMap, y: TaxonMap) = {
-  if (hasWikidata(x)) {
-    TaxonMap(y.providedTaxonId, y.providedTaxonName, x.providedTaxonId, x.providedTaxonName)
-  } else if (hasWikidata(y)) {
-    TaxonMap(x.providedTaxonId, x.providedTaxonName, y.providedTaxonId, y.providedTaxonName)
-  } else {
-    x
-  }
-}
-
-val mappedMap = mapByKey.rdd.reduceByKey( (x,y) => swapWikidata(x,y) )
-
-val taxonMapCombined = mappedMap.map(_._2).filter(!hasWikidata(_)).distinct
-taxonMapCombined.toDS.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
 taxonCacheCombined.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonCache.tsv")
+
+
+val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id => TaxonMap(s"WD:${row.id}", row.names.head, id, "")))
+
+val mappedMap = taxonMapGloBI.joinWith(taxonMapWikidata, taxonMapWikidata.toDF.col("resolvedTaxonId") ==
+= taxonMapGloBI.toDF.col("resolvedTaxonId")).map(pair => TaxonMap(pair._1.providedTaxonId, pair._1.providedTaxonN
+ame, pair._2.providedTaxonId, pair._2.providedTaxonName))
+
+
+val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct
+
+taxonMapCombined.toDS.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
+
 
 val taxonMapCombinedLoad = spark.read.format("com.databricks.spark.csv").option("delimiter", "\t").option("header", "true").load("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
 
