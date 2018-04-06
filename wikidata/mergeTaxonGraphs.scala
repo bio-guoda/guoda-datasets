@@ -58,9 +58,9 @@ val taxonMapWikidata = wikidataInfoNotEmpty.flatMap(row => row.sameAsIds.map(id 
 val mappedMap = taxonMapGloBI.joinWith(taxonMapWikidata, taxonMapWikidata.toDF.col("resolvedTaxonId") === taxonMapGloBI.toDF.col("resolvedTaxonId")).map(pair => TaxonMap(pair._1.providedTaxonId, pair._1.providedTaxonName, pair._2.providedTaxonId, pair._2.providedTaxonName))
 
 
-val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct
+val taxonMapCombined = taxonMapGloBI.union(mappedMap).distinct.orderBy("providedTaxonId", Seq("providedTaxonName", "resolvedTaxonId", "resolvedTaxonName"))
 
-taxonMapCombined.distinct.coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
+taxonMapCombined.distinct.orderBy("providedTaxonId", Seq("providedTaxonName", "resolvedTaxonId", "resolvedTaxonName")).coalesce(1).write.mode(SaveMode.Overwrite).format("csv").option("header", "true").option("delimiter", "\t").save("/guoda/data/source=globi/date=20180404/taxonMap.tsv")
 
 
 
