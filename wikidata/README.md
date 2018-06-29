@@ -1,6 +1,6 @@
 This page contains some experiments on how to get all of wikidata and mine it using scala/spark and compare with Open Tree of Life and GloBI. 
 
-If you have questions / comments, please visit https://guoda.bio or open an issue at https://github.com/bio-guoda/guoda-services/issues/new . 
+If you have questions / comments, please visit http://guoda.bio or open an issue at https://github.com/bio-guoda/guoda-services/issues/new . 
 
 # create a terminal
 To ensure the these are available, login to jupyter.idigbio.org using your github credentials and create a terminal.
