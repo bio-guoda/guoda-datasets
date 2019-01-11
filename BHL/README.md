@@ -11,7 +11,7 @@ publication.
 On Ubuntu 16.04, the following packages need to be added for Python:
 
 ```bash
-apt-get install python3-unicodecsv python3-dateutil
+apt-get install python3-unicodecsv python3-dateutil python3-gevent
 ```
 
 ## Obtaining the metadata
